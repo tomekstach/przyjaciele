@@ -1,0 +1,573 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 300px) and (max-width : 640px) {
+	#bip-cloud{
+		display: none;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	h2{
+		font-size: 3em !important;
+	}
+	.top-bar-icon,
+	.green-effect,
+	.up-grey-effect,
+	#logo,
+	.blue-container:before,
+	.blue-container:after,
+	.under-footer,
+	#top-bar,
+	.timeline:before,
+	#icons-homepage{
+		display: none;
+	}
+	.slider-text{
+		font-size: 30px;
+		line-height: 30px;
+		background: #ffffffbf;
+    	padding: 10px;
+	}
+	.slider-button button{
+		font-size: 28px !important;
+	}
+	.wrapper-blue .blue-container{
+		background-image: none !important;
+		padding: 0 !important;
+		margin-bottom: 150px !important;
+	}
+	.size-four{
+		font-size: 1.6em !important;
+	}
+	.text-margin-up{
+		margin-top: -80px !important;
+	}
+	.equ_medical_info{
+		padding-left: 0 !important;
+	}
+	.c100{
+		bottom: 130px !important;
+	}
+	.realizacja-col{
+		padding: 0 !important;
+		margin-bottom: 50px !important;
+	}
+	.equ_medical_title h2{
+		font-size: 1.4em !important;
+	}
+	.lvca-stats-title-wrap{
+		padding: 0 !important;
+	}
+	#counter-row .vc_custom_heading{
+		padding-bottom: 40px !important;
+	}
+	#CF59e8919374d4e_1-row-1 .form-group,
+	.form-control{
+		margin-bottom: 20px !important;
+	}
+	.footer-information div:first-child,
+	.footer-krs.information-text{
+		border: 0 !important;
+	}
+	.footer-information{
+		width: 100% !important;
+	}
+	.footer-information div{
+		display: block !important;
+		margin: 0 auto !important;
+		width: 100% !important;
+		padding-bottom: 25px;
+	}
+	#colophon{
+		padding-bottom: 120px !important;
+	}
+	.fa.fa-facebook-official, .fa.fa-instagram{
+		width: 33.33% !important;
+		text-align: center;
+	}
+	.lvca-number.odometer.odometer-auto-theme span{
+		font-size: 32px !important;
+	}
+
+	/*how we help*/
+	#time1,
+	#time2,
+	#time3,
+	#time4,
+	#time5,
+	#time6,
+	#time7,
+	#time8,
+	#time9,
+	#time10,
+	#time11,
+	#time12,
+	#time13,
+	#time14,
+	#time14{
+	    top: auto !important;
+	}
+	.timeline{
+		height: auto !important;
+	}
+	.content-timeLine{
+		padding: 5px !important; 
+	}
+	.container-timeLine{
+		padding-right: 0px !important;
+	}
+	.general-button-donate button{
+		width: 100% !important;
+		font-size: 3em !important;
+	}
+	.content-timeLine h2{
+		font-size: 3em !important;
+	}
+	.mobile-class{
+		font-size: 2em !important;
+	}
+	.mobile-head{
+		font-size: 4em !important;
+	}
+	.square-list-general{
+		margin: 0;
+		padding: 0;
+		line-height: 1.5em;
+	}
+	.square-list{
+		display: block !important;
+		margin: 0;
+	}
+	.vc_custom_1509628791768{
+		background: #fff !important;
+	}
+	.square-list-general > li{
+		margin-bottom: 20px !important;
+	}
+	.general-button-donate .vc_btn3.vc_btn3-size-lg.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+    	padding-left: 100px !important;
+    	font-size: 3em !important;
+	}
+	.button-fade{
+		font-size: 1.5em !important;
+	}
+	.wpb_text_column.wpb_content_element.vc_custom_1509694394188{
+		padding: 0 !important;
+	}
+	.wpb_text_column.wpb_content_element.vc_custom_1509694394188 p{
+		color: #000 !important;
+		font-size: 2.1em !important;
+		background: #fff !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509691861748.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509694903195.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709348397 h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508496989472 h2{
+		font-size: 3em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509694903195.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex .equ_medical_title h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 .equ_medical_title h2{
+		font-size: 1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509694903195 .current_info .c100{
+		top: 250px !important;
+	}
+	.vc_custom_1509969425275 button{
+		font-size: 2.1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 .equ_medical_title h2{
+		height: auto !important;
+		margin-bottom: 5px !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 .finished_info .c100{
+		top: 230px !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508496989472 .button-scroll{
+		font-size: 2.6em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508738969004 .button-download{
+		font-size: 1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508759401916 button{
+		font-size: 2em !important;
+	}
+	.col-md-4 {
+    	width: 32.333333% !important;
+	}
+	.lvca-container .lvca-fourcol{
+		width: 100% !important;
+		margin: 80px 0px !important;
+	}
+	.realizacja-col{
+		width: 100% !important;
+	}
+	#colophon .second a{
+		width: 100% !important;
+	}
+	.next-current,
+	.prv-current,
+	.next-current1,
+	.prv-current1,
+	.next-current2,
+	.prv-current2,
+	.next-current3,
+	.prv-current3{
+		display: none !important;
+	}
+	.vc_row[data-vc-full-width]{
+		padding-right: 0 !important;
+	}
+	.lvca-odometers .lvca-odometer{
+		margin: 20px 0 !important;
+	}
+	.img-footer-icon{
+		padding-bottom: 0 !important;
+	}
+	.owl-nav.disabled{
+		display: none;
+	}
+	.vc_custom_heading.amatic.font-bold.font-blue.vc_custom_1509694832614{
+		padding: 0 !important;
+	}
+	.current_info .c100{
+		bottom: 0 !important;
+		top: 275px !important;
+	}
+	.donate_friends button{
+		font-size: 3.5em !important;
+	}
+	.finished_info .c100{
+		bottom: 0 !important;
+		top: 225px !important;
+	}
+	.vc_custom_heading.amatic.font-bold.font-blue.vc_custom_1511445541188,
+	.vc_custom_heading.amatic.font-bold.font-blue.text-upper.vc_custom_1511764324453{
+		margin-left: 0 !important;
+	}
+	.vc_column-inner.vc_custom_1511767893585,
+	.vc_column-inner.vc_custom_1511767970189{
+		margin: 0 !important; 
+	}
+	.donate_friends.vc_custom_1509608054705 button{
+		font-size: 3.5em !important;
+		padding-left: 80px !important;
+	}
+	.owl-item.active,
+	.owl-item{
+		width: 60% !important;
+	}
+	#news-row .owl-item{
+		width: 100% !important;
+	}
+	#carusel_current_project .owl-item,
+	#car-finish .owl-item{
+		width: 81% !important;
+	}
+	.vc_row.wpb_row.vc_inner.vc_row-fluid.vc_custom_1509618690682.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex{
+		background-size: cover !important;
+	}
+	.vc_row.wpb_row.vc_inner.vc_row-fluid.diagram-row.vc_custom_1509628791768.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex{
+		margin-left: 4px !important;
+		margin-right: 4px !important;
+	}
+		.timeline{
+		height: 267em !important;
+	}
+	.mob-standard-logo{
+		height: 50px !important;
+	}
+	/*Tymczasowo*/
+	.slider-image-custom.wpb_column.vc_column_container.vc_col-sm-4,
+	.bottom-slider.bottom-fixed-col{
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width : 320px) and (max-width : 1366px) {
+	#page{
+		padding-top: 0px !important;
+	}
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+	#bip-cloud{
+		display: none;
+	}
+	h2{
+		font-size: 4em !important;
+	}
+	.top-bar-icon,
+	.green-effect,
+	.up-grey-effect,
+	#logo,
+	.blue-container:before,
+	.blue-container:after,
+	.under-footer,
+	#top-bar,
+	#menu-krs,
+	#custom-search,
+/*	.timeline:before,*/
+	#icons-homepage{
+		display: none;
+	}
+	.slider-text{
+		font-size: 30px;
+		line-height: 30px;
+		background: #ffffffbf;
+    	padding: 10px;
+	}
+	.slider-button button{
+		font-size: 28px !important;
+	}
+	.wrapper-blue .blue-container{
+		background-image: none !important;
+		padding: 0 !important;
+		margin-bottom: 150px !important;
+	}
+	.size-four{
+		font-size: 2em !important;
+	}
+	.text-margin-up{
+		margin-top: -80px !important;
+	}
+	.equ_medical_info{
+		padding-left: 0 !important;
+	}
+	.c100{
+		bottom: 130px !important;
+	}
+	.realizacja-col{
+		padding: 0 !important;
+		margin-bottom: 50px !important;
+	}
+	.equ_medical_title h2{
+		font-size: 1.4em !important;
+	}
+	.lvca-stats-title-wrap{
+		padding: 0 !important;
+	}
+	#counter-row .vc_custom_heading{
+		padding-bottom: 40px !important;
+	}
+	#CF59e8919374d4e_1-row-1 .form-group,
+	.form-control{
+		margin-bottom: 20px !important;
+	}
+	.footer-information div:first-child,
+	.footer-krs.information-text{
+		border: 0 !important;
+	}
+	.footer-information{
+		width: 100% !important;
+	}
+	.footer-information div{
+		display: block !important;
+		margin: 0 auto !important;
+		width: 100% !important;
+		padding-bottom: 25px;
+	}
+	#colophon{
+		padding-bottom: 120px !important;
+	}
+	.fa.fa-facebook-official, .fa.fa-instagram{
+		width: 33.33% !important;
+		text-align: center;
+	}
+	.lvca-number.odometer.odometer-auto-theme span{
+		font-size: 32px !important;
+	}
+	/*how we help*/
+	#time1{
+	    top: 4em !important;
+	}
+	#time2{
+	    top: auto !important;
+	}
+	#time3{
+	    top: auto !important;
+	}
+	#time4{
+	    top: auto !important;
+	}
+	#time5{
+	    top: auto !important;
+	}
+	#time6{
+	    top: auto !important;
+	}
+	#time7{
+	    top: auto !important;
+	}
+	#time8{
+	    top: auto !important;
+	}
+	#time9{
+	    top: auto !important;
+	}
+	#time10{
+	    top: auto !important;
+	}
+	#time11{
+	    top: auto !important;
+	}
+	#time12{
+	    top: auto !important;
+	}
+	#time13{
+	    top: auto !important;
+	}
+	#time14{
+	    top: auto !important;
+	}
+	#time15{
+	    top: auto !important;
+	}
+	.timeline{
+		height: auto !important;
+	}
+	.content-timeLine{
+		padding: 5px !important; 
+	}
+	.container-timeLine{
+		padding-right: 0px !important;
+	}
+	.general-button-donate button{
+		width: 100% !important;
+		font-size: 3em !important;
+	}
+	.content-timeLine h2{
+		font-size: 3em !important;
+	}
+	.mobile-class{
+		font-size: 3em !important;
+	}
+	.mobile-head{
+		font-size: 4em !important;
+	}
+	.color-font-mobile{
+
+	}
+	.square-list-general{
+		margin: 0;
+		padding: 0;
+		line-height: 1.5em;
+	}
+	.square-list{
+		display: block !important;
+		margin: 0;
+	}
+	.vc_custom_1509628791768{
+		background: #fff !important;
+	}
+	.square-list-general > li{
+		margin-bottom: 20px !important;
+	}
+	.general-button-donate .vc_btn3.vc_btn3-size-lg.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+    	padding-left: 105px !important;
+    	font-size: 3em !important;
+    	display: block !important;
+    	width: 50% !important;
+    	margin: 0 auto !important;
+	}
+	.button-fade{
+		font-size: 1.5em !important;
+	}
+	.wpb_text_column.wpb_content_element.vc_custom_1509694394188{
+		padding: 0 !important;
+	}
+	.wpb_text_column.wpb_content_element.vc_custom_1509694394188 p{
+		color: #000 !important;
+		font-size: 2.1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509691861748.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509694903195.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709348397 h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508496989472 h2{
+		font-size: 3em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509694903195.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex .equ_medical_title h2,
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 .equ_medical_title h2{
+		font-size: 1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509694903195 .current_info .c100{
+		top: 250px !important;
+	}
+	.vc_custom_1509969425275 button{
+		font-size: 2.1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 .equ_medical_title h2{
+		height: auto !important;
+		margin-bottom: 5px !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1509709149828 .finished_info .c100{
+		top: 230px !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508496989472 .button-scroll{
+		font-size: 2.6em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508738969004 .button-download{
+		font-size: 1em !important;
+	}
+	.vc_row.wpb_row.vc_row-fluid.vc_custom_1508759401916 button{
+		font-size: 2em !important;
+	}
+	.col-md-4 {
+    	width: 32.333333% !important;
+	}
+	.lvca-container .lvca-fourcol{
+		width: 100% !important;
+		margin: 80px 0px !important;
+	}
+	.realizacja-col,
+	#colophon .second a{
+		width: 100% !important;
+	}
+	.container-timeLine.left .content-timeLine{
+		left: -40px !important;
+	}
+	.content-timeLine h2{
+		font-size: 4em !important;
+	}
+	.wpb_text_column.wpb_content_element.vc_custom_1509694394188{
+		background-image: none !important;
+	}
+	.button-download{
+		font-size: 1em !important;
+	}
+	.lvca-odometers .lvca-odometer{
+		margin: 20px 0 !important;
+	}
+	.vc_row.wpb_row.vc_inner.vc_row-fluid.vc_custom_1509618690682.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex,
+	.wpb_text_column.wpb_content_element.vc_custom_1511764741755.history-text{
+		padding: 0 !important;
+	}
+	.current_info .c100{
+		top: 250px !important;
+		bottom: 0 !important;
+		left: 50% !important;
+		transform: translateX(-50%);
+	}
+	.finished_info .c100{
+	    bottom: 0 !important;
+    	top: 200px !important;
+	}
+	.owl-item.active,
+	.owl-item{
+		padding:10px !important;
+	}
+
+	/*Tymczasowo*/
+	.slider-image-custom.wpb_column.vc_column_container.vc_col-sm-4,
+	.bottom-slider.bottom-fixed-col{
+		display: none !important;
+	}
+}
+
+@media only screen and (min-width : 1024px) and (max-width : 1240px) {
+	.wpb_text_column.wpb_content_element.vc_custom_1511424812971.blue-container{
+		background-size: cover !important;
+		padding: 20px !important;
+	}
+}

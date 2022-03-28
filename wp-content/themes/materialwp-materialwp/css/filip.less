@@ -1,0 +1,289 @@
+@import 'const.less';
+#logo {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#menu-lang-menu {
+    li a {
+        &:before {
+            background: none;
+        }
+    }
+}
+
+.post-content-custom {
+    a {
+        color: #fff;
+        text-decoration: underline;
+        text-decoration: underline;
+    }
+    li {
+        position: relative;
+        &:before {
+            content: "•";
+            left: -16px;
+            top: 9px;
+            transform: translateY(-50%);
+            position: absolute;
+            margin-right: 10px;
+            font-weight: bold;
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+}
+
+.post-content-col {
+    padding: 0;
+}
+
+.title-para {
+    @media @xs {
+        p {
+            padding: 0;
+            font-size: 1.1em;
+        }
+    }
+    @media @lg-m {
+        p {
+            padding-right: 28px;
+            font-size: 1.2em;
+        }
+    }
+}
+
+.welcome-screen.vc_row.wpb_row.vc_row-fluid.vc_row-has-fill {
+    @media @xs {
+        // h1.amatic{
+        // 	padding-bottom: 8px;
+        // }
+        .vc_column-inner {
+            padding-top: 0 !important;
+        } // height: 100vh;
+        padding-top: 40vh !important;
+        background-size: 100vh !important;
+        background-position: top center !important;
+    }
+    @media @s {
+        height: auto;
+    }
+    @media @ts {
+        padding-top: 0 !important;
+        background-size: cover !important;
+    }
+    @media @md {}
+}
+
+#how-we-help-slider.vc_row {
+    background-size: cover !important;
+}
+
+.post-meta-container {
+    margin: 0 auto;
+    p {
+        display: block;
+    }
+    @media @xs {
+        img[class*='wp-image'] {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    @media @xs {
+        img[class*='wp-image'] {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    @media @s {
+        text-align: center;
+        p {
+            display: inline-block;
+        }
+        img[class*='wp-image'] {
+            display: block;
+            margin: 0 0.7em;
+        }
+    }
+    @media @lg {
+        p {
+            display: block;
+        }
+        img[class*='wp-image'] {
+            display: inline-block;
+            margin: 0 0.7em;
+        }
+    }
+}
+
+.page-title-container {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.who-we-are-row,
+.become-friend-row {
+    // padding-bottom: 0;
+    h1.amatic {
+        margin: 0;
+        padding-bottom: 0;
+    }
+    @media @xs {
+        h1.amatic {
+            padding-bottom: 25px;
+        }
+    }
+    @media @ts {
+        h1.amatic {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.become-friend-row,
+.who-we-are-row {
+    @media @xs {
+        .title-para {
+            max-width: 100%;
+        }
+    }
+    @media @md {
+        .title-para {
+            min-width: 100%;
+        }
+    }
+    @media @lg-m {
+        .title-para {
+            max-width: 90%;
+        }
+    }
+    @media @hd {
+        .title-para {
+            max-width: 80%;
+        }
+    }
+}
+
+.become-friend-row:lang(pl) {
+    @media @md {
+        .title-para {
+            width: 100% !important;
+        }
+    }
+}
+
+.bcf-hero-text-col {
+    @media @xs {
+        margin-bottom: 35px !important;
+    }
+    @media @md {
+        margin-bottom: 0 !important;
+    }
+}
+
+.top-image.head-left {
+    padding-top: 0 !important;
+}
+
+.single-donate-title-container {
+    margin-bottom: 200px;
+}
+
+.single-donate-img-wrapper {
+    position: relative;
+    top: -170px;
+    margin-bottom: -220px;
+}
+
+
+.single-donate-img {
+    width: 90%;
+    height: 300px;
+    display: block;
+    z-index: 1;
+    position: relative;
+    margin: 0px auto;
+    background-size: cover !important;
+    background-position: center center !important;
+    @media @tm{
+        width: 80%;
+        height: 360px;
+
+    }
+}
+
+.single-news-img {
+    margin-top: 50px;
+}
+
+// #tax_one_percent{
+// 	position: relative;
+// 	background: red !important;
+// 	&:before{
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		background: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/paski.png)no-repeat;
+// 		// background: red;
+// 		height: 50px;
+// 		background-size: cover;
+// 		width: 100%;
+// 		display: block !important;
+// 	}
+// }
+.page-id-643,
+.page-id-1773 {
+    .entry-container {
+        padding-bottom: 0;
+    }
+    .hentry {
+        // margin-bottom: 0;
+    }
+    .site-footer {
+        margin-top: 0;
+    }
+}
+
+// .search.search-results {
+//     .byline,
+//     .cat-links,
+//     .comments-link {
+//         display: none;
+//     }
+// }
+.single-donate-thansk-row{
+    padding: 50px 0;
+    @media @lg-m{
+        padding: 100px 0;
+    }
+}
+
+.single-donate{
+    // .empty-space{
+    //     height: 0px;
+    // }
+    h2.donate-desc-heading{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    @media @md{
+        height: 140px;
+    }
+}
+.single-donate-circle{
+    bottom: 50px;
+    @media @lg-m{
+        bottom: 70px;
+    }
+}
+.green-box-post-donate{
+    padding: 50px 0;
+    background-size: 100% 100% !important;
+    @media @tm{
+        padding: 70px;
+    }
+    @media @lg-m{
+        background-size: contain !important;
+
+    }
+}

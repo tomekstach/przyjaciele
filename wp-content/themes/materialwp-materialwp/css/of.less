@@ -1,0 +1,81 @@
+/* OUR FRIENDS */
+
+@import 'const.less';
+
+.of-donate-button-size {
+    width: 390px;
+    height: 110px;
+    @media @xs {
+        width:100%;
+        height:80px;
+    }
+    @media @s{
+        width: 390px;
+    }
+}
+
+.big_thank-you-wrapper {
+    padding-top: 34px;
+}
+
+.slider-button-donate {
+    background-position: center;
+}
+
+//naglowek a big thank you...
+h2.vc_custom_heading.amatic.font-bold.vc_custom_1511449152124 {
+    @media @xs {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}}
+
+//lista friends
+.vc_column-inner.vc_custom_1511767893585, .vc_column-inner.vc_custom_1511767970189 {
+    @media @xs {
+    padding: 0 10px !important;
+    margin: 0 !important;
+}}
+
+ul#heartlist {
+    list-style: none;
+    padding: 0;
+}
+
+ul#heartlist li {
+    padding-left: 0.5em;
+    color: @white;
+    line-height: 45px;
+    font-size: 1.2em;
+    font-weight: 400 !important;
+    @media @xs {
+        padding-left: 0;
+        line-height: 40px;
+    }
+}
+
+ul#heartlist li:before {
+    content: "\f004";
+    /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.9em;
+    /* same as padding-left set on li */
+    width: 1.3em;
+    /* same as padding-left set on li */
+    margin-right: 2.3em;
+    color: @green !important;
+    @media @xs {
+        margin-right: 4px;
+    }
+}
+
+.our-friends-bottom-img{
+    // top: 20px;
+    position: relative;
+    @media @lg{
+        top: 0;
+    }
+    @media @lg-m{
+        top: 20px;
+    }
+}

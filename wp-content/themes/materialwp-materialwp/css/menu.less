@@ -1,0 +1,144 @@
+/* CONTACT US */
+
+@import 'const.less';
+
+.mobmenur-container {
+    top: 50% !important;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.wpb_raw_code.wpb_content_element.wpb_raw_html {
+    margin-bottom: 0 !important;
+}
+
+span#cn-notice-text a {
+    color: @white;
+    text-decoration: underline;
+    font-weight: 600;
+    border-bottom: 1px solid @white;
+}
+
+#logo {
+    @media @xs {
+        display: none;
+    }
+    @media @md {
+        display: block;
+    }
+}
+
+#top-bar {
+    @media @xs {
+        display: block;
+    }
+    @media @md {
+        display: block;
+    }
+}
+
+#mob-top-bar {
+    background-color: #eee;
+    height: 30px;
+    position: relative;
+    @media @xs {
+        position: fixed;
+        top: -30px;
+        right: 0;
+        z-index: 9999;
+        width: 100%;
+    }
+    @media @md {
+        position: relative;
+    }
+}
+
+.top-bar-icon {
+    @media @xs {
+        width: 100%;
+    }
+    @media @lg {
+        width: 1136px;
+    }
+}
+
+.dropdown-lang {
+    @media @xs {
+        display: none;
+    }
+    @media @md {
+        display: inline-block;
+    }
+}
+
+a.mobi-donate {
+    position: absolute;
+    right: 80px;
+    width: 90px;
+    top: 22px;
+    height: auto;
+    @media @xs {
+        right: 50px;
+    }
+}
+
+#menu-page.navbar {
+    @media @md {
+        #logo {
+            width: 180px;
+            height: 120px;
+        }
+        li {
+            a {
+                font-size: 14px;
+                padding: 20px 8px;
+                // padding-left: 8px;
+                // padding-right: 8px;
+            }
+        }
+        .menu-donate {
+            margin-right: 20px;
+            a {
+                margin-left: 20px;
+                font-size: 1.8em;
+            }
+        }
+    }
+    @media @lg {
+        #logo {
+            height: 128px;
+        }
+        li {
+            a {
+                font-size: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+        }
+    }
+}
+.dropdown-menu>li>a{
+    padding: 3px 20px !important;
+}
+
+.menu-donate a {
+    height: 41px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
+    background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_smallbar.svg);
+    background-repeat: no-repeat;
+    width: 107px;
+    margin: 10px 0px 0px 50px;
+    &:hover {
+    background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/FP_donate_smallbar_action.svg);
+    background-repeat: no-repeat;
+    }
+}
+
+.menu-donate-menu-mobile-en-container {
+    z-index: 999999;
+    position: absolute;
+    right: 0;
+}

@@ -1,0 +1,973 @@
+/* WHO WE ARE */
+
+@import 'const.less';
+
+
+//naglowek documents
+h2.vc_custom_heading.amatic.gov-text.font-blue.font-bold.vc_custom_1512124472670 {
+    @media @xs {
+        padding-bottom: 0 !important;
+    }
+}
+
+.whoweare-row.vc_row {
+    @media @xs {
+        padding: 0!important;
+        overflow: visible !important;
+    }
+}
+
+//.whoweare-col-heading {
+//    @media @xs {
+//        margin-top: 200px;
+//        h1 {
+//            position: relative; // padding: 20px 0;
+//            // margin: 0 !important;
+//            // font-size: 60px !important;
+//        }
+//    }
+//    @media @ts {
+//        margin-top: 0;
+//        h1 {
+//            font-size: 90px !important;
+//            margin-bottom: 20px !important;
+//        }
+//    }
+//}
+.vc_custom_1509617113216 {
+    @media @xs {
+        display: none !important;
+    }
+}
+
+.vc_custom_1512123344965 {
+    @media @xs {
+        margin-bottom: 35px;
+    }
+}
+
+//.whoweare-col-caption {
+//    @media @xs {
+//        padding: 50px 0 10px;
+//        background: @white;
+//        p {
+//            font-size: 14px;
+//        }
+//    }
+//    @media @ts {
+//        background: transparent;
+//    }
+//}
+.whoweare-whitebg-row.vc_row {
+    @media @xs {
+        padding: 0 !important;
+        .button-fade {
+            width: 100%;
+            font-size: 20px;
+        }
+    }
+    @media @ts {
+        // .button-fade {
+        //     // width: 50%;
+        // }
+    }
+}
+
+#committee {
+    @media @xs {
+        padding: 0 0 40px !important;
+        .wpb_text_column {
+            margin-top: 30px !important;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    @media @ts {
+        padding-top: 50px !important;
+        padding-bottom: 80px !important;
+    }
+    /* @media @ts{*/
+    /* 	.wpb_text_column{*/
+    /* 		margin-top: 0 !important;*/
+    /* 	}*/
+    /* }*/
+    padding-top: 50px;
+    padding-bottom: 80px;
+
+}
+
+.executive-caption {
+    @media @xs {
+        margin-left: 0;
+    }
+    @media @ts {
+        margin-left: 5%;
+    }
+}
+
+.commite-person-row.vc_row {
+    margin-top: 80px;
+    h3 {
+        margin: 10px 0 0;
+        text-transform: inherit !important;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    h5 {
+        margin-top: 4px;
+        margin-bottom: 20px;
+    }
+    p {
+        font-size: 15px;
+    }
+    @media @xs {
+        margin-top: 50px !important;
+        h3 {
+            font-size: 18px;
+        }
+        h5 {
+            margin-top: 4px;
+        }
+        p {
+            margin-top: 20px;
+        }
+        .wpb_single_image {
+            margin-bottom: 0 !important;
+            img {
+                width: 70%;
+            }
+        }
+    }
+    @media @ts {
+        h3 {
+            margin-top: 0;
+        }
+        .wpb_single_image {
+            margin-top: 30px;
+            img {
+                width: 80%;
+            }
+        }
+    }
+    @media @tm {
+        .wpb_single_image {
+            margin-top: 30px;
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+.the-excerpt {
+    clear: both;
+}
+
+span.fa.fa-circle {
+    display: none !important;
+    border: none !important;
+}
+
+
+
+//naglowek board
+h2.vc_custom_heading.amatic.font-bold.font-blue.vc_custom_1512070143312 {
+    @media @xs {
+        padding: 0 !important;
+    }
+}
+
+/*Style dotyczące timeline*/
+
+/* The actual timeline (the vertical ruler) */
+
+.timeline {
+    overflow: hidden;
+    height: 226em;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 48px;
+    @media @xs {
+        height: auto;
+        padding-top: 50px;
+        &:before {
+            left: 0;
+            margin-left: 0;
+        }
+    }
+
+    @media only screen and (min-width:601px) and (max-width: 1366px) {
+        &:before {
+            left: 50%;
+            margin-left: -30px;
+        }
+        &:after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 6px;
+        background-color: @blue;
+        top: 5px;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+        @media @xs {
+            left: 27px;
+            margin-left: 0;
+        }
+    }
+    &::before {
+        /*content: '<img src="http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/Untitled-2-01.png" />';*/
+        content: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/grot-02.png');
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0px;
+        left: 50%;
+        margin-left: -30px;
+        display: block;
+    }
+    ul {
+        margin-left: 15px;
+        list-style: initial;
+        & > li {
+            font-size: 0.9em;
+        }
+    }
+}
+
+/*wys timeline*/
+
+#time1 {
+    top: 30px;
+}
+
+#time2 {
+    top: -16em;
+}
+
+#time3 {
+    top: -21em;
+}
+
+#time4 {
+    top: -37em;
+}
+
+#time5 {
+    top: -44em;
+}
+
+#time6 {
+    top: -58em;
+}
+
+#time7 {
+    top: -65em;
+}
+
+#time8 {
+    top: -82em;
+}
+
+#time9 {
+    top: -87em;
+}
+
+#time10 {
+    top: -101em;
+}
+
+#time11 {
+    top: -109em;
+}
+
+#time12 {
+    top: -122em;
+}
+
+#time13 {
+    top: -131em;
+}
+
+#time14 {
+    top: -143em;
+}
+
+#time15 {
+    top: -150em;
+}
+
+#time16 {
+    top: -165em
+}
+
+.content-timeLine {
+    padding: 20px 30px 20px 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    @media @xs {
+        padding: 10px 0px 10px 10px; //        h2 {
+        //            width: auto;
+        //            font-size: 60px;
+        //            margin-top: 0;
+        //            /* display: block;*/
+        //            /* float: none;*/
+        //        }
+        img {
+            /* width: 80%;*/
+            margin: 0 5px 10px;
+            float: right;
+        }
+    }
+    @media @tm {
+        img {
+            width: 30%;
+        }
+    } //    h2 {
+    //        @media @xs {
+    //            font-size: 110px;
+    //        }
+    //        @media @ts {
+    //            font-size: 80px;
+    //        }
+    //        @media @md {
+    //            font-size: 100px;
+    //        }
+    //    }
+}
+
+/* Container around content */
+
+.container-timeLine {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+    &::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: -13px;
+        background-color: @green;
+        border: 4px solid @green;
+        top: 15px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+.cd-timeline-img.cd-picture {
+    border: none !important;
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+    margin-left: -9px;
+    margin-top: 24px;
+    @media @xs {
+        margin-left: 16px !important;
+    }
+    @media @tsm {
+        margin-left: -9px !important;
+    }
+}
+
+a.timeline-express-read-more-link {
+    display: none;
+}
+
+#cd-timeline {
+    &::before {
+        width: 6px !important;
+    }
+    &::after {
+        content: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/grot-02.png');
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: -10px;
+        left: 50%;
+        margin-left: -29px !important;
+        display: block;
+        @media @xs {
+            left: 20px !important;
+        }
+        @media @tsm {
+            left: 50% !important;
+        }
+    }
+}
+
+.cd-timeline-img.cd-picture.icon-no-readmore {
+    border: none !important;
+    box-shadow: none;
+    height: 20px;
+    width: 20px;
+    margin-left: -9px;
+    margin-top: 24px;
+}
+
+.cd-timeline-title-container {
+    float: left;
+    @media @xs {
+        width: 100%;
+    }
+    @media @s {
+        max-width: 50%;
+    }
+    @media @ts,
+    @lg-m {}
+}
+
+.cd-timeline-title-container + img {
+    float: right;
+    margin-top: 0px !important;
+    @media @xs {
+        width: 100% !important;
+    }
+    @media @s,
+    @lg-m {
+        max-width: 50% !important;
+        float: right;
+    }
+}
+
+h2.cd-timeline-item-title {
+    color: @green;
+    float: left;
+    font-family: "Amatic SC" !important;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    @media @xs {
+        font-size: 92px;
+    }
+    @media @s {
+        float: left;
+        font-size: 140px;
+    }
+    @media @ts {
+        font-size: 170px;
+    }
+    @media @tsm {
+        font-size: 100px;
+    }
+    @media @tm,
+    @lg-m {
+        font-size: 120px;
+    }
+}
+
+#board-id.board-row {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    @media @xs {
+        padding: 80px 0!important;
+        .wpb_text_column.vc_custom_1509356915168 {
+            margin-top: 30px !important;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    @media @ts {
+        padding: 80px 35px !important;
+    }
+    @media @lg-m {}
+}
+
+.board-members {
+    margin-bottom: 45px !important;
+}
+
+.board-caption {
+    margin-top: 80px;
+    margin-bottom: 75px !important;
+    @media @xs {
+        margin-top: 60px;
+        margin-bottom: 60px !important;
+    }
+}
+
+.board-peoples-row.vc_row {
+    h3 {
+        text-transform: initial !important;
+        font-size: 22px;
+        margin: 0;
+        font-weight: 500;
+    }
+
+    @media @xs {
+        text-align: center;
+        padding: 0 !important;
+        h3 {
+            font-size: 18px;
+        }
+    }
+    @media @ts {
+        text-align: left;
+    }
+    @media @tm {
+        padding: 0 0 0 50px !important;
+    }
+}
+
+
+
+
+.our-history-row {
+    @media @xs {
+        padding: 0 15px!important;
+        .vc_column-inner:nth-child(2) {
+            padding-top: 0 !important;
+        }
+        .wpb_text_column.wpb_content_element {
+            padding: 50px 0 0 !important;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    @media @ts {
+        padding-left: 35px !important;
+        padding-right: 35px !important;
+    }
+}
+
+#page .our-history-row.vc_row .ourhistory-title-col.vc_column_container > .vc_column-inner {
+    padding-top: 80px;
+    h2 {
+        margin: 0;
+    }
+    @media @xs {
+        padding-top: 30px;
+    }
+
+
+}
+
+.smaller-heading {
+    font-size: 55px !important;
+    @media @xs {
+        font-size: 38px !important;
+    }
+    @media @s {
+        font-size: 44px !important;
+    }
+    @media @ts {
+        font-size: 55px !important;
+    }
+}
+
+.outstory-row-caption.vc_row {
+    @media @xs {
+        background-size: 100% 100% !important;
+        margin-top: 50px !important;
+        padding: 0!important;
+        /* margin: 0 5px !important;*/
+        .history-text {
+            padding: 0 !important;
+        }
+        @media @ts {
+            padding: 10px 0 !important;
+            .vc_column-inner {
+                padding: 30px 0;
+                p {
+                    width: 90%;
+                    margin: 0 auto;
+                }
+            }
+            .history-text {
+                margin: 0 !important;
+            }
+        }
+
+    }
+
+    @media @tm {
+        .history-text {
+            padding: 0 20px !important;
+        }
+    }
+    @media @md {
+        .vc_column-inner {
+            p {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+
+}
+
+
+
+
+.left::after,
+.right::after {
+    @media @xs {
+        left: 18px;
+    }
+    @media only screen and (min-width:601px) and (max-width: 1366px) {
+        left: -15px;
+    }
+}
+
+.left::after {
+    @media only screen and (min-width: 601px) and (max-width: 1366px) {
+        right: -10px;
+        left: auto;
+    }
+}
+
+.container-timeLine {
+    @media @xs {
+        // padding-right: 0px;
+        top: auto !important;
+    }
+    @media only screen and (min-width:601px) and (max-width: 1366px) {
+        padding-right: 40px;
+    }
+}
+
+
+
+.governance-row {
+    // h2.gov-text {}
+    @media @xs {
+        padding: 0 !important;
+        .wpb_raw_code.wpb_content_element.wpb_raw_html {
+            margin: 0 !important;
+        }
+        a.vc_general.vc_btn3 {
+            font-size: 40px !important;
+        }
+        p {
+            font-size: 14px;
+        }
+
+    }
+    @media @ts {
+        a.vc_general.vc_btn3 {
+            font-size: 50px !important;
+        }
+    }
+
+}
+
+.governance-row--second {
+    @media @xs {
+        p {
+            margin-top: 30px;
+        }
+        h2.amatic {
+            font-size: 40px !important;
+        }
+    }
+}
+
+.title_wwa_doc {
+    @media @xs {
+        font-size: 14px;
+    }
+    @media @tm {
+        font-size: 16px;
+    }
+    @media @lg-m {
+        font-size: 18px;
+    }
+}
+
+
+.diagram-row.vc_row {
+    .square-list-general {
+        margin: 0;
+        padding: 0;
+    }
+    img {
+        width: 80%;
+        margin-top: 0;
+    }
+    margin-bottom: 35px !important;
+    background-size: 100% 100% !important;
+    @media @xs {
+        background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2018/01/ramkaczarnax3.png) !important;
+        padding-bottom: 30px !important;
+        img {
+            margin-top: 30px;
+        }
+        p {
+            font-size: 14px;
+        }
+
+        .vc_column-inner {
+            padding: 0 !important;
+        }
+        .square-list-general {
+            margin: 0;
+            padding: 0;
+            li {
+                margin-top: 10px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+
+                -webkit-box-align: start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+            }
+            div {
+                margin: 0;
+
+            }
+            p {
+                margin-left: 12px;
+                width: 90%;
+                line-height: 16px;
+            }
+        }
+    }
+    @media @ts {
+        background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/ramkabiala.png) !important;
+        margin: 20px auto;
+        padding: 30px 0 !important;
+        width: 80%;
+        .circle-chart {
+            img {
+                width: 80%;
+            }
+        }
+        /* background-size: contain !important;*/
+        .square-list-general {
+            p {
+                font-size: 16px;
+                line-height: 20px;
+            }
+        }
+    }
+    @media @md {
+        width: 90%;
+        margin: 0 auto;
+    }
+    @media @lg-m {
+        height: 240px;
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+.wwa-donate-button {
+    padding: 50px 0 90px 0;
+}
+
+.wha-box25k div {
+    background-size: 100% 100%;
+}
+
+.documents-heading-row {
+    padding-top: 45px;
+    padding-bottom: 125px;
+}
+
+.document-col {
+    .button-fade {
+        font-size: 1em;
+        display: inline-block;
+        padding: 7px 35px;
+    }
+    @media @xs {
+        margin-top: 50px;
+        .wpb_text_column.wpb_content_element {
+            margin-bottom: 20px !important;
+        }
+        p {
+            height: auto !important;
+        }
+        .button-fade {
+            font-size: 18px;
+        }
+    }
+    @media @ts {
+        .wpb_text_column.wpb_content_element {
+            min-height: 40px;
+        }
+    }
+}
+
+#rowWithReports {
+    h4 {
+        margin: 0 0 30px;
+        min-height: 40px;
+    }
+    @media @xs {
+        h4 {
+            min-height: 0;
+            margin: 0 0 20px;
+        }
+    }
+    @media @ts {
+        h4 {
+            font-size: 16px;
+            min-height: 60px;
+        }
+    }
+}
+
+.documents-row.vc_row {
+    @media @xs {
+        h2 {
+            margin-bottom: 30px !important;
+
+        }
+        padding: 0 0 30px !important;
+        p {
+            font-size: 14px;
+        }
+    }
+}
+
+.reports-select-row {
+    text-align: center;
+    .button-fade {
+        display: inline-block;
+        padding: 7px 15px;
+        font-size: 1.1em;
+
+    }
+    @media @xs {
+        .reports-select-col.wpb_column.vc_column_container {
+            width: 100% !important;
+        }
+        .wpb_column.vc_column_container {
+            width: 50% !important;
+            margin-bottom: 30px;
+            &:nth-child(6) {
+                display: none !important;
+            }
+        }
+        .button-fade {
+            font-size: .9em;
+        }
+
+    }
+    @media @tm {
+        .reports-select-col.wpb_column.vc_column_container {
+            width: 20% !important;
+        }
+        .wpb_column.vc_column_container {
+            width: 20% !important;
+            margin-bottom: 30px;
+            &:nth-child(6) {
+                display: none !important;
+            }
+        }
+    }
+    @media @lg-m {
+        .wpb_column.vc_column_container {
+            // width: 20% !important;
+            flex: 1;
+            &:nth-child(6) {
+                display: none !important;
+            }
+        }
+
+    }
+
+}
+
+.reports-select-col {
+    .vc_column-inner {
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    }
+}
+
+.whoweare-col-heading {
+    @media @xs {
+        h1.amatic {
+            text-align: center !important;
+        }
+    }
+    @media @md {
+        h1.amatic {
+            text-align: right !important;
+        }
+    }
+}
+
+
+.diagram-row.vc_row {
+    margin: 0 auto;
+    .square-list-general {
+        @media @xs {
+            left: 0;
+            transform: translateX(0);
+            padding: 0 15px;
+        }
+    }
+}
+
+select#mySelect {
+    padding: 0;
+    margin: 0; // text-indent: 16px;
+    @media @xs {
+        width: 100%; // max-width: 360px;
+        margin: 0 auto;
+
+    }
+    @media @s {
+        width: 90%;
+    }
+    @media @md {
+        max-width: 280px;
+    }
+
+}
+
+.reports-under-text {
+    padding-top: 50px;
+    padding-bottom: 10px;
+    @media @xs {
+        padding-top: 20px;
+    }
+}
+
+.hentry {
+    @media @ts {
+        margin-bottom: 0;
+    }
+}
+
+.entry-container {
+    @media @ts {
+        padding-bottom: 0 !important;
+    }
+}
+
+#how-we-help-slider {
+    background-position: 90% bottom !important;
+}
+
+#testowy-row {
+    h2.amatic {
+        font-size: 55px !important;
+        font-family: "Amatic SC" !important;
+        padding: 0 !important;
+        margin: 0;
+    }
+}
+
+#car-finish {
+    .owl-nav {
+        top: 25%;
+    }
+}

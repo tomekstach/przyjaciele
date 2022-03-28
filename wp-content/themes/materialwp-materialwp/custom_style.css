@@ -1,0 +1,2253 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  word-break: normal !important;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+
+body {
+  background: #fff;
+  overflow-x: hidden;
+}
+
+a,
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase !important;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container-search {
+  display: none;
+}
+
+#top-bar {
+  background-color: #eee;
+  height: 30px;
+  position: relative;
+}
+
+div.cookie-notice-hidden {
+  visibility: hidden !important;
+}
+
+.top-bar-icon {
+  width: 1136px;
+  display: block;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+}
+
+.single-icon-top-bar {
+  margin: 0 8px;
+  padding-top: 2px;
+  display: inline-block;
+}
+
+.linked-top,
+.face-top {
+  width: 12px;
+  height: auto;
+}
+
+.bip-top {
+  width: 28px;
+  height: auto;
+}
+
+.slider-text {
+  text-align: left;
+}
+
+.slider-text-first {
+  font-size: 65px;
+}
+
+.slider-text-second {
+  font-size: 22px;
+}
+
+.donate-active-section-col {
+  padding: 0 15px!important;
+}
+
+.single-donate-thansk-row h2.amatic {
+  font-size: 45px!important;
+}
+
+@media only screen and (max-width: 1349px) and (min-width: 1200px) {
+  #menu-page.navbar li a {
+    font-size: 0;
+  }
+}
+
+#container-logo {
+  width: 200px;
+}
+
+#logo {
+  background-color: #0067b4;
+  top: -34px;
+  /* 	margin-top: -34px;
+    margin-bottom: -8px; */
+  height: 128px;
+  position: absolute;
+  z-index: 9;
+}
+
+h5.amatic {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+#menu-menu-1,
+#menu-menu-pl {
+  float: right !important;
+}
+
+#menu-menu-1 li,
+#menu-menu-pl li {
+  display: inline-block;
+  padding: 8px 0 8px;
+  vertical-align: middle;
+}
+
+#menu-menu-1 .uderline-menu a:hover,
+#menu-menu-pl .uderline-menu a:hover,
+a:focus,
+a:active {
+  color: #0067b4;
+  text-decoration: none;
+}
+
+#menu-page {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+#menu-page li>a {
+  color: #0067b4;
+  font-weight: 700;
+  transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+  position: relative;
+  background-color: transparent;
+}
+
+.menu-item-has-children>a::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  height: 4px;
+  width: 0;
+  background-color: #bade86;
+  transform-origin: right top;
+  transition: width .2s ease-out, color 0.1s, transform 0.2s ease-out;
+}
+
+#menu-page .uderline-menu a:active::before {
+  background-color: #bade86;
+}
+
+#menu-page .uderline-menu a:hover::before,
+a:focus::before {
+  width: 100%;
+}
+
+.up-grey-effect {
+  align-items: stretch !important;
+  position: absolute !important;
+  top: -26px !important;
+  left: 0 !important;
+  z-index: 1;
+}
+
+.vc_gitem_row .vc_gitem-col {
+  background-color: #ececec;
+  text-align: center;
+}
+
+.vc_btn3.vc_btn3-color-juicy-pink,
+.vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat {
+  background-color: #0067b4 !important;
+  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  font-size: 18px !important;
+  border-radius: 10px !important;
+}
+
+.vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_title {
+  display: none;
+}
+
+.vc_column-inner {}
+
+#fld_2188278Caption p,
+#fld_9089144Caption p,
+#fld_4440052Caption p,
+#fld_7777562Caption p {
+  line-height: 18px;
+  color: #aaaaaa;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+#fld_2188278Caption,
+#fld_9089144Caption,
+#fld_4440052Caption,
+#fld_7777562Caption {
+  margin-left: 20px !important;
+  margin-top: 35px !important;
+  margin-bottom: 35px !important;
+  line-height: 18px;
+  color: #aaaaaa;
+  font-weight: 600;
+}
+
+#fld_2188278_1-wrap .checkbox-inline,
+.checkbox-inline {
+  float: left !important;
+}
+
+#fld_5366900_1 {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  font-size: 22px !important;
+  border-radius: 10px !important;
+  background-color: #0067b4 !important;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  font-weight: 100 !important;
+}
+
+.form-control {
+  border: 3px solid #b8c2c3 !important;
+  border-radius: 7px !important;
+  padding: 20px !important;
+}
+
+.under-footer {
+  position: absolute !important;
+  margin-top: -65px;
+  left: 0 !important;
+  z-index: 1;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/pasekniebieskislider.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
+#colophon {
+  background-color: #0067b4 !important;
+}
+
+#colophon .second {
+  width: 100%;
+}
+
+#colophon .second a {
+  display: inline-block;
+  text-align: center;
+  margin: 0;
+}
+
+.footer-menu {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  .footer-menu {
+    display: block;
+  }
+}
+
+@media only screen and (min-width:1020px) and (max-width:1349px) {
+  .footer-menu {
+    display: flex;
+  }
+}
+
+.footer-information {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-information div {
+  display: inline-block;
+  margin: 0 20px;
+  text-align: center;
+  width: 25%;
+}
+
+.footer-information div:first-child {
+  border-right: 1px solid #fff;
+}
+
+.footer-information div p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.fa.fa-facebook-official,
+.fa.fa-instagram {
+  font-size: 22px;
+  margin: 0 10px;
+}
+
+.general-button-donate a {
+  color: #f8504f !important;
+  font-size: 4em !important;
+  font-family: "Amatic SC" !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  border: 2px solid #f8504f !important;
+}
+
+.general-button-donate a i {
+  font-size: 1em !important;
+}
+
+.general-button-donate button {
+  color: #f8504f !important;
+  font-size: 4em !important;
+  font-family: "Amatic SC" !important;
+  border-radius: 10px !important;
+  font-weight: 700 !important;
+  border: 2px solid #f8504f !important;
+}
+
+.general-button-donate button i {
+  font-size: 1em !important;
+}
+
+.general-button-donate .vc_btn3.vc_btn3-size-lg.vc_btn3-icon-left:not(.vc_btn3-o-empty) {
+  padding-left: 100px !important;
+}
+
+.vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-icon-left vc_btn3-color-grey {
+  padding-left: 98px !important;
+  text-align: right;
+}
+
+.donate_friends a {
+  background-color: #f8504f !important;
+  color: #fff !important;
+  font-family: "Amatic SC" !important;
+  font-size: 4em !important;
+  padding-left: 100px !important;
+  border-radius: 10px !important;
+  border: 2px solid #f8504f !important;
+  font-weight: 800;
+}
+
+.donate_friends i {
+  font-size: 1em !important;
+}
+
+.donate_friends:hover a {
+  color: #f8504f !important;
+  background-color: #fff !important;
+}
+
+.button-fade:hover {
+  background-color: #fff !important;
+  color: #0067b4 !important;
+  border: 2px solid #0067b4 !important;
+}
+
+.new-bottom {
+  bottom: -75px !important;
+}
+
+.bottom-zero {
+  bottom: 0px !important;
+}
+
+ul#customList {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+}
+
+ul#customList li {
+  margin-bottom: 15px;
+  text-indent: -17px;
+}
+
+ul#customList li:before {
+  content: "•";
+  margin-right: 10px;
+  font-weight: bold;
+  color: #bade86;
+  font-size: 18px;
+}
+
+ul#customList1 {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  position: relative;
+  left: 40px;
+}
+
+ul#customList1 li {
+  /* 	text-indent:-17px; */
+  font-weight: 600;
+}
+
+ul#customList1 li:before {
+  content: "•";
+  margin-right: 10px;
+  font-weight: bold;
+  color: #bade86;
+  font-size: 18px;
+}
+
+ul.customListTimeline {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 10px;
+  position: relative;
+  left: 5px;
+  margin-left: 15px !important;
+  list-style: none !important;
+}
+
+ul.customListTimeline li {
+  text-indent: -17px;
+}
+
+ul.customListTimeline li:before {
+  content: "•";
+  margin-right: 10px;
+  font-weight: bold;
+  color: #bade86;
+  font-size: 18px;
+}
+
+.krs-text-one {
+  font-family: 'Roboto', sans-serif !important;
+  border: 1px solid;
+  padding: 0 10px;
+  font-size: 22px;
+  position: relative;
+  top: -4px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.krs-text-two {
+  font-family: 'Roboto', sans-serif !important;
+  border: 1px solid;
+  padding: 0 10px;
+  font-size: 22px;
+  position: relative;
+  top: -4px;
+  border-left: 0 !important;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul#disklist {
+  list-style: none;
+  margin-left: 15px;
+}
+
+ul#disklist li {
+  padding-left: 0.5em;
+  /* 	color:#fff; */
+  line-height: 28px;
+  font-size: initial;
+  font-weight: 400 !important;
+}
+
+ul#disklist li:before {
+  content: "\2022";
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -23px;
+  margin-right: 11px;
+  color: #bade86 !important;
+  font-size: 35px;
+  position: relative;
+  top: 6px;
+}
+
+.text-to-heart:after {
+  content: "\f004";
+  font-family: FontAwesome;
+  display: inline-block;
+  width: 1.3em;
+  color: #bade86 !important;
+}
+
+#fld_5366900_1 {
+  border: 0 !important;
+}
+
+#fld_1564116_1 {
+  margin-top: 20px;
+}
+
+.form-group .form-control:focus,
+.form-group-default .form-control:focus {
+  background-image: none !important;
+}
+
+.contact-list {
+  margin-bottom: 10px !important;
+}
+
+p.contact-list {
+  margin: auto;
+  width: 100%;
+}
+
+.contact-list .krs-text-one {
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'rawline', sans-serif !important;
+  border: 1px solid;
+  padding: 1px 6px;
+  font-size: 10px;
+  position: relative;
+  top: 0px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.contact-list .krs-text-two {
+  font-family: 'Roboto', sans-serif !important;
+  border: 1px solid;
+  padding: 1px 6px;
+  font-size: 10px;
+  position: relative;
+  top: 0px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.contact-list .nip-icon {
+  font-size: 10px;
+  font-weight: 900;
+  padding: 1px 10px;
+  border: 1px solid;
+  border-radius: 4px;
+}
+
+.contact-list .fa.fa-envelope-o {
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid;
+  padding: 0px 10px;
+}
+
+.contact-list .fa.fa-phone {
+  font-size: 1em;
+  border-radius: 4px;
+  border: 1px solid;
+  padding: 0px 11px;
+}
+
+p.contact-list img {
+  margin-right: 10px;
+  width: 28px;
+}
+
+#fld_3478316_2 {
+  width: 50%;
+  margin: 0 auto;
+  display: block;
+  font-size: 22px !important;
+  border-radius: 10px !important;
+  background-color: #0067b4 !important;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  font-weight: 100 !important;
+  border: 0 !important;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.up {
+  transform: translateY(-50%);
+}
+
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.content-timeLine h2 {
+  text-align: center;
+  color: #bade86;
+  width: 50%;
+  float: left;
+  font-size: 10em;
+  padding-top: 5px;
+  font-family: "Amatic SC" !important;
+}
+
+.content-timeLine img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.clear {
+  clear: both;
+}
+
+.right::after {
+  left: -12px;
+}
+
+@media all and (max-width:600px) {
+  .timeline::after {
+    left: 31px;
+  }
+  .container-timeLine {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  .container-timeLine::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+  .right {
+    left: 0%;
+  }
+}
+
+.tax-dedu h5 {
+  margin-top: 30px;
+  padding-top: 30px;
+  position: relative;
+}
+
+.tax-dedu h5:before {
+  content: '';
+  display: block;
+  width: 200px;
+  height: 2px;
+  background: #0067b4;
+  top: 0;
+  position: absolute;
+  left: calc(50% - 100px);
+}
+
+@media (max-width: 767px) {
+  .slider-text-first {
+    font-size: 35px;
+  }
+  #slider-page hr {
+    border-top: 2px solid #0067b4 !important;
+    max-width: 240px !important;
+  }
+  .slider-text-second {
+    font-size: 16px;
+  }
+  .slider-button-donate {
+    width: 180px !important;
+    height: 51px !important;
+  }
+  .our-mission-blue-bg-text.wpb_text_column p {
+    font-size: 22px!important;
+  }
+  .our-mission-blue-bg-text.wpb_text_column {
+    padding-top: 30px !important;
+    padding-right: 30px !important;
+    padding-bottom: 30px !important;
+    padding-left: 30px !important;
+  }
+}
+
+.governance-row {
+  background-color: #0067b4;
+  overflow: visible;
+}
+
+.gov-text {
+  color: #fff;
+}
+
+.vc_round-chart-canvas {
+  width: 180px !important;
+  height: 180px !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.diagram {}
+
+.vc_chart-with-legend {
+  width: 45% !important;
+}
+
+.vc_chart-legend li {
+  line-height: 2.5em !important;
+}
+
+.vc_chart-legend span {
+  margin-right: 2.5em !important;
+}
+
+.general-button-donate-white {
+  text-align: center;
+}
+
+.general-button-donate-white a {
+  color: #fff !important;
+  font-size: 4em !important;
+  font-family: "Amatic SC" !important;
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  border-style: solid;
+  background: transparent !important;
+  display: inline-block;
+  padding: 0 16px;
+  line-height: 1;
+}
+
+.circle-chart {
+  text-align: center;
+}
+
+.square-list-general {
+  list-style: none;
+  display: inline-block;
+  line-height: 2.5;
+}
+
+.square-list-wrapper {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.square-list {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.square-list-general li p {
+  display: inline-block;
+}
+
+.purple-list {
+  background: #DB7AFF;
+}
+
+.green-list {
+  background: #B7CE30;
+}
+
+.blue-list {
+  background: #B6DCFF;
+}
+
+.pink-list {
+  background: #FA7DC5;
+}
+
+.underline-bottom {
+  border-bottom: 1px solid #fff !important;
+}
+
+#how-we-help-slider {}
+
+#foo {
+  position: absolute !important;
+  width: 100px !important;
+  top: -100px !important;
+  display: none !important;
+}
+
+.aim {
+  margin-bottom: 0 !important;
+}
+
+.equ_medical_info {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 10px 15px;
+  border: 2px solid #0067b4;
+  border-radius: 10px;
+  /* 	padding-left:110px; */
+}
+
+.equ_medical_button a {
+  text-align: center;
+  display: block;
+  background: none;
+  color: #0067b4;
+  border-bottom: 0;
+  font-size: 18px;
+  font-weight: 600;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 5px !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid #0067b4 !important;
+  padding: 8px 0px;
+}
+
+.equ_medical_button a:hover {
+  background-color: #0067b4 !important;
+  color: #fff !important;
+}
+
+.equ_medical_title h2 {
+  margin-bottom: 30px;
+  text-transform: initial !important;
+  min-height: 50px;
+}
+
+.equ_medical_img img {
+  object-fit: cover;
+  height: 280px;
+  display: block;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.finished_info img {
+  object-fit: contain;
+  height: 180px;
+  display: block;
+  width: 100%;
+  margin: 20px auto;
+}
+
+
+/* .finished_title h2{height:70px;} */
+
+.container.single-donate-title-container>div>h2 {
+  font-weight: 300 !important;
+}
+
+.container.single-donate-title-container br {
+  content: " ";
+}
+
+.container.single-donate-title-container br::after {
+  content: " ";
+}
+
+.c100 {
+  font-size: 120px;
+}
+
+.c100>span {
+  line-height: 2.5em !important;
+  font-size: 28px !important;
+  letter-spacing: -1px;
+  left: 50% !important;
+  text-align: left !important;
+  font-family: 'Roboto', sans-serif !important;
+  /* 	font-family:'rawline', sans-serif !important; */
+  font-weight: 800 !important;
+  width: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  margin-left: -0.9em !important;
+}
+
+.carousel-procent {
+  font-size: 14px;
+  padding-left: 2px;
+}
+
+.finished_info .c100>span {
+  line-height: 3.1em !important;
+  font-size: 0.32em !important;
+  text-align: left !important;
+  font-weight: 800 !important;
+  width: auto !important;
+  margin-left: -1.2em !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'rawline', sans-serif !important;
+}
+
+.payDonateGrid {
+  padding: 15px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  background: #fff;
+}
+
+.equ_medical_info,
+.equ_medical_info p {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.payDonateGrid:hover .equ_medical_info {
+  background: #0067b4 !important;
+}
+
+.payDonateGrid:hover .equ_medical_info p {
+  color: #fff !important;
+}
+
+#testowy-row,
+#pay-donate-row-custom-grid,
+.img-pay-hide {
+  display: none;
+}
+
+#opis_caldera {
+  text-align: justify;
+}
+
+.caldera-grid .form-control {
+  min-height: 55px;
+  padding: 15px 15px !important;
+  line-height: 20px;
+}
+
+#slidecontainer {
+  width: 90% !important;
+  display: block !important;
+  margin: 0 auto !important;
+  background: #eee !important;
+  padding: 30px 20px !important;
+  border-radius: 10px !important;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 139px;
+  height: 135px;
+  background: #bade86;
+  position: relative;
+  bottom: 24px;
+  cursor: pointer;
+  background: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/your_help.png');
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: 999;
+}
+
+.slider::-moz-range-thumb {
+  width: 139px;
+  height: 108px;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/your_help.png');
+  z-index: 999;
+  margin-bottom: 24px !important;
+  transform: translateY(-32%);
+}
+
+.slider::-moz-range-track {
+  background: #0067B4;
+}
+
+.slider::-ms-thumb {
+  width: 139px;
+  height: 108px;
+  border: 0;
+  position: relative;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background: #bade86;
+  z-index: 999999;
+  margin-bottom: 24px !important;
+  transform: translateY(-32%);
+  overflow: visible;
+}
+
+#image-check {
+  width: 45px;
+  height: 45px;
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  margin-left: -23px;
+  top: 50%;
+  margin-top: -24px;
+}
+
+.box-for-transfer {
+  margin-top: 70px !important;
+  margin-bottom: 70px !important;
+  display: none;
+  padding: 0 30px;
+}
+
+.lvca-stats-title-wrap {
+  /* 	padding:0 90px; */
+}
+
+.lvca-odometers .lvca-odometer .lvca-stats-title {
+  color: #333;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.lvca-odometers .lvca-odometer .lvca-stats-title span {
+  margin-right: 0px !important;
+  float: initial !important;
+  font-size: 22px!important;
+  display: block;
+  color: #333!important;
+  font-weight: 700;
+}
+
+#comments {
+  display: none !important;
+}
+
+.lvca-number.odometer.odometer-auto-theme span {
+  font-size: 35px !important;
+  font-weight: 700;
+  vertical-align: baseline;
+}
+
+.site-header .search-form {
+  /* 	position:absolute;right:72px;top:26px; */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.search-field {
+  background-color: #fff !important;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/search-1-1.png);
+  background-position: 5px center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 80% !important;
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #999;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -999;
+  cursor: pointer;
+  padding: 10px;
+  border: 0;
+  padding-left: 50px;
+  border-bottom: 2px solid #0067B4;
+}
+
+.container-search {
+  background-color: #fff !important;
+  height: 37px;
+  margin: 3px 0;
+  width: 20%;
+  top: 103px;
+  right: 17%;
+  height: 100px;
+  z-index: 999;
+  position: fixed !important;
+}
+
+.close-search {
+  position: absolute !important;
+  top: 28px !important;
+  right: 40px !important;
+  font-size: 2em !important;
+  color: #999 !important;
+  display: block !important;
+  cursor: pointer;
+}
+
+.close-search img {
+  width: 20px;
+  position: relative;
+}
+
+#menu-page.navbar .menu-donate-pl {
+  margin-right: 30px;
+}
+
+#menu-page.navbar .menu-donate-pl a {
+  margin-left: 10px;
+  font-size: 1.8em;
+}
+
+.menu-donate-pl a,
+.menu-donate-button {
+  height: 41px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_menu_PL.svg);
+  width: 107px;
+  margin: 10px 0px 0px 50px;
+  background-repeat: no-repeat;
+}
+
+.menu-donate-pl a:hover,
+.menu-donate-button:hover {
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_menu_rollover_PL-1.svg);
+}
+
+#krs_location {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+
+.menu-right-elem {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.menu-donate-button,
+.menu-donate-button-en {
+  display: inline-block;
+  margin-left: 0;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+#lupka {
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mobmenu-right-panel {
+    display: none !important;
+  }
+}
+
+.mob-menu-header-holder.mobmenu {
+  top: 30px;
+}
+
+.search-form .search-submit {
+  display: none;
+}
+
+.search-field {
+  color: #000 !important;
+}
+
+.site-header .search-field {}
+
+#menu-menu-1,
+#menu-menu-pl {
+  /* 	padding-right:100px; */
+  display: inline-block;
+  vertical-align: middle;
+  float: none!important;
+}
+
+#menu-krs {
+  /* 	position:absolute;right:0px;top:23px; */
+  width: 45px;
+  height: auto;
+}
+
+.menu-lang-menu-container {
+  display: inline-block;
+}
+
+#navbar {
+  position: relative;
+  text-align: right;
+}
+
+.img-post-donate {
+  width: 80%;
+  height: 450px;
+  margin: 0 auto;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.number-percente-post-donate .c100 {
+  top: 35px;
+  left: 50%;
+  /*margin-left:-65px !important;*/
+  z-index: 2 !important;
+}
+
+.empty-space {
+  display: block;
+  height: 140px;
+}
+
+.top-decoration-donate {
+  position: absolute !important;
+  top: 425px;
+  left: 0 !important;
+  z-index: 1;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/gorapasek.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+}
+
+.bottom-decoration-donate {
+  position: absolute !important;
+  left: 0;
+  bottom: -20px;
+  left: 0 !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/dolpasek.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+}
+
+.bottom-decoration-donate1 {
+  position: absolute !important;
+  left: 0;
+  top: 0px;
+  left: 0 !important;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/gora-bial.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+}
+
+.green-box-post-donate {
+  text-align: center;
+  margin-bottom: 60px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  /*padding:70px;*/
+  /*background-image:url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/ramkazielona.png);
+	background-position:center !important;background-repeat:no-repeat !important;background-size:contain !important;*/
+  max-height: 338px;
+  max-width: 400px;
+  border: 5px solid #aad073;
+  border-radius: 10px;
+  padding: 35px;
+  padding-top: 60px;
+}
+
+.post-content-custom p.remaining-count {
+  background: rgb(170, 208, 115);
+  color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.post-content-custom p#remaining-to {
+  color: #aad073;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.post-content-custom p #cost-text {
+  color: #a2a2a2;
+  font-size: 14px;
+  display: block;
+  line-height: 1;
+}
+
+.post-content-custom p .cost-number {
+  font-size: 18px;
+}
+
+.pswp__bg {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.green-box-post-donate p {
+  margin-bottom: 0;
+}
+
+.image-post-donate-kids {
+  display: block;
+  margin: 0 auto;
+}
+
+.percent_container {
+  width: 100%;
+  display: block;
+  position: absolute;
+}
+
+.button-donate-post {
+  background-image: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/FP_donate_smallbar.svg');
+  display: block;
+  margin: 0 auto;
+  width: 289px;
+  height: 82px;
+}
+
+.bottom-decoration-post {
+  position: absolute !important;
+  left: 0;
+  bottom: -20px;
+  left: 0 !important;
+  z-index: 1;
+  padding-top: 13px !important;
+  padding-bottom: 13px !important;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/2.png) !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100%;
+}
+
+.post-content-custom p {
+  color: #333;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.post-custom-image {
+  display: block;
+  position: relative;
+  z-index: 9;
+}
+
+.nav>li.dropdown.open {
+  position: static;
+}
+
+.nav>li.dropdown.open .dropdown-menu {
+  display: table;
+  border-radius: 0px;
+  width: 200%;
+  text-align: center;
+  left: -50%;
+  right: 0;
+  background: #bade86;
+  padding: 28px 20px;
+  z-index: 1;
+}
+
+.dropdown-menu>li {
+  display: table-cell;
+  height: 20px;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.navbar.navbar .dropdown-menu .active>a,
+.navbar-default.navbar .dropdown-menu .active>a,
+.dropdown-menu>li>a {
+  background-color: #bade86 !important;
+  color: #fff !important;
+}
+
+.vc_btn3.vc_btn3-color-grey.vc_btn3-style-modern {
+  background-image: none !important;
+}
+
+.center-text-box {
+  text-align: center;
+}
+
+.donate_friends.vc_custom_1509608054705 {
+  margin-top: 15px !important;
+}
+
+.lvca-container .lvca-odometer:nth-child(3) .lvca-number {
+  color: #aad073;
+}
+
+.donate_friends.vc_custom_1509608054705 button {
+  font-size: 7em !important;
+  padding-left: 155px !important;
+}
+
+.pay-donate-hide button {
+  border: 0 !important;
+}
+
+#fld_2188278Caption,
+#fld_4440052Caption,
+#fld_7777562Caption {
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'rawline', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+span.odometer-formatting-mark {
+  font-size: 0px !important;
+  margin-left: 7px;
+}
+
+.odometer-formatting-mark:after {
+  font-size: 40px !important;
+  content: "" !important;
+  position: relative;
+  top: -3px;
+}
+
+div[data-stop="25000000"] .odometer-inside:after {
+  font-size: 20px !important;
+  content: "PLN" !important;
+  /* 	position:absolute; */
+  /* 	bottom:10px; */
+  margin-left: 3px;
+  vertical-align: baseline;
+}
+
+.change-col {
+  width: 15% !important;
+}
+
+.change-col1 {
+  width: 35% !important;
+}
+
+.size-two-new {
+  font-size: 1.8em;
+}
+
+.payDonateGrid2.payDonateGrid .equ_medical_info {
+  padding-left: 95px !important;
+}
+
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1510652505437.vc_row-has-fill {
+  background-size: 125% !important;
+}
+
+.col-md-4 {
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.bottom-button-slider button {
+  margin-left: 0 !important;
+}
+
+#page {
+  padding-top: 85px !important;
+}
+
+#masthead {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.caret {
+  display: none;
+}
+
+.footer-information div p {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.footer-information div p:hover {
+  opacity: 0.6;
+}
+
+#menu-item-725 {
+  margin-right: 30px;
+}
+
+#colophon a {
+  opacity: 1;
+  color: #fff;
+}
+
+#colophon a:hover {
+  opacity: 0.7;
+}
+
+span#cn-notice-text a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  border-bottom: 1px solid #fff;
+}
+
+#cookie-notice {
+  top: 100px;
+  height: 82px !important;
+  z-index: 9 !important;
+  background-color: #0051b5 !important;
+  opacity: 0.7;
+  color: #fff;
+}
+
+.cookie-notice-container {
+  position: relative;
+  top: 58%;
+  transform: translateY(-50%);
+}
+
+#cn-accept-cookie {
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url(/wp-content/uploads/2018/10/close.png) no-repeat center;
+  background-size: 12px;
+}
+
+#cn-close-notice {
+  display: none;
+}
+
+#button-impact:hover #bip-cloud {
+  background: #000 !important;
+}
+
+#footerBipIcon {
+  cursor: pointer;
+}
+
+#bip-cloud p {
+  display: block;
+  width: 65%;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-22%);
+  font-size: 1em;
+}
+
+.owl-carousel {
+  position: relative;
+}
+
+.animated {
+  -webkit-animation-duration: 0.1s;
+  -moz-animation-duration: 0.1s;
+  -o-animation-duration: 0.1s;
+  animation-duration: 0.1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both
+}
+
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-100%)
+  }
+  100% {
+    -webkit-transform: translateY(0)
+  }
+}
+
+@-moz-keyframes slideDown {
+  0% {
+    -moz-transform: translateY(-100%)
+  }
+  100% {
+    -moz-transform: translateY(0)
+  }
+}
+
+@-o-keyframes slideDown {
+  0% {
+    -o-transform: translateY(-100%)
+  }
+  100% {
+    -o-transform: translateY(0)
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%)
+  }
+  100% {
+    transform: translateY(0)
+  }
+}
+
+.animated.slideDown {
+  -webkit-animation-name: slideDown;
+  -moz-animation-name: slideDown;
+  -o-animation-name: slideDown;
+  animation-name: slideDown;
+}
+
+@-webkit-keyframes slideUp {
+  0% {
+    -webkit-transform: translateY(0)
+  }
+  100% {
+    -webkit-transform: translateY(-100%)
+  }
+}
+
+@-moz-keyframes slideUp {
+  0% {
+    -moz-transform: translateY(0)
+  }
+  100% {
+    -moz-transform: translateY(-100%)
+  }
+}
+
+@-o-keyframes slideUp {
+  0% {
+    -o-transform: translateY(0)
+  }
+  100% {
+    -o-transform: translateY(-100%)
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0)
+  }
+  100% {
+    transform: translateY(-100%)
+  }
+}
+
+.animated.slideUp {
+  -webkit-animation-name: slideUp;
+  -moz-animation-name: slideUp;
+  -o-animation-name: slideUp;
+  animation-name: slideUp;
+  overflow: hidden;
+}
+
+.becomeROw {
+  bottom: 54px !important;
+  width: 97.8% !important;
+  display: block !important;
+  margin: 0 auto !important;
+  left: 8px!important;
+}
+
+.vc_column-inner.vc_custom_1511513869721 {
+  background-position: top !important;
+}
+
+#rowWithReports .button-fade {
+  font-size: 1.3em !important;
+}
+
+#mySelect {
+  background: transparent;
+  padding: 13px 35px;
+  border-radius: 10px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid #0067B4;
+  color: #0067B4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  height: 41px;
+  width: 100px;
+  padding: 0;
+}
+
+.noneClass {
+  display: none !important;
+}
+
+.pay-img figure {
+  width: 100% !important;
+}
+
+.pay-img .vc_single_image-wrapper.vc_box_border_grey {
+  width: 100% !important;
+}
+
+h1.vc_custom_1510914855665 {
+  margin-bottom: 10px !important;
+}
+
+h3.panel-title {
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'rawline', sans-serif !important;
+  color: #0067B4 !important;
+  font-weight: 900 !important;
+  font-size: 1.9em !important;
+  text-transform: none !important;
+}
+
+.widget-area ul li>a {
+  color: #000 !important;
+  border-bottom: 1px solid #000 !important;
+}
+
+.panel {
+  box-shadow: 0 0 0 !important;
+}
+
+.panel-heading {
+  background-color: transparent !important;
+}
+
+.page-header {
+  border-bottom: 0 !important;
+}
+
+.page-header .page-title {
+  font-family: "Amatic SC" !important;
+  font-size: 6em !important;
+  font-weight: 800 !important;
+  color: #0067B4 !important;
+  margin-bottom: 40px;
+}
+
+#secondary {
+  margin-top: 80px !important;
+}
+
+.entry-title a {
+  color: #0067B4 !important;
+  font-family: "Amatic SC" !important;
+  font-weight: 600 !important;
+  font-size: 1.4em !important;
+}
+
+.entry-container {}
+
+#myRange:before {
+  content: '';
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: #000;
+}
+
+#top-pasek {
+  height: 20px !important;
+  margin-bottom: 0 !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+}
+
+#bottom-pasek {
+  height: 20px !important;
+  margin-bottom: 0 !important;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  top: 429px;
+  display: none;
+}
+
+#right-pasek {
+  position: absolute;
+  top: 203px;
+  right: 15%;
+}
+
+#left-pasek {
+  position: absolute;
+  top: 210px;
+  left: 15%;
+}
+
+.button-fade.btn.disabled {
+  border-color: #999 !important;
+}
+
+.dropdown-lang {
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  z-index: 99999;
+}
+
+.dropdown-lang .sub-menu {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-lang .sub-menu li {
+  margin-top: 1px;
+}
+
+.dropdown-lang .sub-menu span {
+  background: #0067b4;
+  color: #fff;
+  margin: 0 !important;
+  width: 100%;
+}
+
+.dropdown-lang .sub-menu span:hover {
+  background: #ddd;
+  color: #0067b4;
+}
+
+.dropdown-lang img {
+  display: none;
+}
+
+.dropdown-lang span {
+  margin: 0 !important;
+  width: 30px;
+  display: block;
+  position: relative;
+  font-size: 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 1px solid #0067b4;
+  border-radius: 4px;
+  padding: 4px 12px 4px 4px;
+  transition: all .3s ease-in-out;
+}
+
+.dropdown-lang .pll-parent-menu-item {
+  position: relative;
+}
+
+.dropdown-lang .pll-parent-menu-item:after {
+  content: '\f0d7';
+  font-family: fontAwesome;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 6px;
+  color: #0067b4;
+}
+
+.site-footer {
+  padding-bottom: 0;
+}
+
+footer#colophon {
+  position: relative;
+}
+
+footer#colophon:after {
+  content: '';
+  position: absolute;
+  top: -55px;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/pasekniebieski.png);
+  background-size: cover;
+}
+
+@media only screen and (max-width:767px) {
+  footer#colophon:after {
+    top: -70px;
+    left: 0;
+    height: 71px;
+  }
+}
+
+.img-wrapper-footer {
+  position: relative;
+  bottom: 8px;
+}
+
+.information-text {
+  display: inline-flex;
+}
+
+.information-text p {
+  line-height: 1;
+  min-width: -webkit-fill-available;
+}
+
+.information-text img {
+  vertical-align: top;
+}
+
+.copyright-by {
+  margin: 4px 0 0 0;
+}
+
+.copyright-by,
+.copyright-by a {
+  display: inline-block;
+  color: #7A94BD !important;
+  font-weight: 700;
+  font-size: 9pt;
+  text-align: center;
+}
+
+footer .copyright-by a {
+  text-decoration: underline !important;
+}
+
+#colophon .second a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+@media only screen and (min-width:992px) {
+  .copyright-by {
+    margin: 10px 20px 20px 0;
+    float: right;
+  }
+  .footer-mail {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+  }
+  #colophon .second a {
+    display: inline-block;
+    text-align: center;
+    margin: 0 22px;
+  }
+}
+
+.pay-img {
+  margin-bottom: 0 !important;
+}
+
+.vc_column-inner.vc_custom_1511513664962 {
+  padding: 35px !important;
+}
+
+
+/* #medicial-row-eq{height:900px !important;} */
+
+.general-button-donate.pay-donate-hide a {
+  padding-left: 100px;
+}
+
+.general-button-donate.pay-donate-hide a:before {
+  content: '';
+  position: absolute;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/serduszko-02.svg);
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 22px;
+  top: 50%;
+  transform: translateY(-42%);
+  background-size: 100%;
+}
+
+.dropdown-menu>li {
+  overflow: visible;
+}
+
+.dropdown-menu>li>a {
+  margin-top: -8px !important;
+}
+
+.dropdown-menu>li>a:hover {
+  border-bottom: 4px solid #0067B4 !important;
+}
+
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1512040559773.vc_row-has-fill.vc_row-o-equal-height.vc_row-o-content-middle.vc_row-flex {
+  background-size: 115% !important;
+}
+
+.vc_row.wpb_row.vc_row-fluid.vc_custom_1510727878803.vc_row-has-fill {
+  background-size: 87% !important;
+  background-color: #ECECEC;
+}
+
+#colophon .second a {
+  border-bottom: 1px solid #0067b4;
+}
+
+#colophon .second a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.paypal-button button {
+  text-align: center !important;
+  display: block !important;
+  background: #0067b4 !important;
+  color: #fff !important;
+  font-size: 1.5em !important;
+  border-radius: 10px !important;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  -moz-transition: all 0.4s ease-in-out !important;
+  -o-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
+  border: 2px solid #0067b4 !important;
+  padding: 20px 28px !important;
+  margin: 0 20px !important;
+  width: -webkit-fill-available !important;
+  position: initial !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
+  font-family: 'Roboto', sans-serif !important;
+  text-transform: uppercase !important;
+}
+
+.submit-btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#labelCustomBecome {
+  font-weight: 300;
+  color: #999;
+}
+
+.paypal-button button:before {
+  background: none !important;
+}
+
+.przelewy_more_hide_information,
+.paypal_more_hide_information {
+  display: none;
+}
+
+.more_info_przelewy span,
+.more_info_paypal span {
+  cursor: pointer;
+  color: #4282B9;
+  font-weight: 400;
+}
+
+#labelCustomBecome {
+  margin-bottom: 0 !important;
+  color: #ABABAB;
+  font-weight: 400;
+}
+
+.przelewy_more_hide_information p,
+.paypal_more_hide_information p {
+  font-weight: 400;
+  color: #ABABAB;
+  font-size: 1em !important;
+}
+
+.information-under {
+  padding-bottom: 30px;
+}
+
+.przelewy_more_hide_information ul li,
+.paypal_more_hide_information ul li {
+  color: #ABABAB;
+  font-weight: 400;
+}
+
+#id_one_time_giving,
+#id_traditional_transfer,
+#monthly_giving_custom {
+  padding: 15px 30px !important;
+}
+
+.paypal-information {
+  display: none;
+}
+
+.post-custom-image {
+  width: 85% !important;
+}
+
+#testowy-row h2.amatic a {
+  font-family: "Amatic SC" !important;
+}
+
+.alert.alert-success {
+  background-color: transparent !important;
+  text-align: center;
+  font-family: "Amatic SC" !important;
+  font-size: 2.8em;
+  color: #C1E38D !important;
+}
+
+.displayNone {
+  display: none;
+}
+
+#news-row .realizacja__inner {
+  background: #fff;
+  padding: 16px 0;
+  /* 	box-shadow: 0 2px #d2d2d2;  */
+  margin-bottom: 2px;
+  border: 5px solid #dde5f2;
+  border-radius: 10px;
+}
+
+#car-wpisy .equ_medical_button a {
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+  width: 100%;
+  border-radius: 5px !important;
+  padding: 7px 16px;
+  max-width: 130px;
+}
+
+#agreeDetails {
+  font-size: 14px;
+  color: #ABABAB;
+  margin-top: 15px;
+}
+
+.paymentOptions {}
+
+.paymentOption {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+}
+
+#paymentAmount {
+  display: none;
+}
+
+#optionPrzelewy24 img {
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slider-button-pit {
+  padding: 8px 25px;
+  background: #f05251;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 3px;
+  line-height: 1;
+}
+
+.slider-button-pit:hover,
+.slider-button-pit:focus {
+  color: #fff;
+}
+
+.slider-button-pit span {
+  font-family: 'Amatic SC';
+  font-size: 48px;
+  display: block;
+  font-weight: 600;
+}
+
+.home_pit_btn {
+  margin-top: 20px;
+}
+
+.slider-text {
+  line-height: 1;
+}
+
+.slider-text span {
+  line-height: 1;
+  font-family: 'Amatic SC';
+}
+
+@media only screen and (max-width: 1349px) and (min-width: 992px) {
+  #slider-page .wpb_column.vc_column_container.vc_col-sm-6 {
+    width: 50%;
+  }
+}

@@ -1,0 +1,159 @@
+@media only screen and (min-width:0px) and (max-width:640px) {
+  #menu-krs,
+  #custom-search {
+    display: none !important;
+  }
+  .contact-slider-wrapper {
+    background-position: bottom!important;
+  }
+  .contact-us-title {
+    font-size: 5em !important;
+    text-align: center !important;
+  }
+  .contact-left-col .vc_column-inner.vc_custom_1511854066958 {
+    padding: 10px 30px !important;
+  }
+  .contact-left-col .conatct-list {
+    word-break: break-all;
+  }
+  .contact-right-col .vc_column-inner.vc_custom_1511865997829 {
+    padding: 10px 30px !important;
+  }
+  .contact-form-col .vc_column-inner {
+    padding: 10px 30px !important;
+  }
+  .contact-form-col .wpb_column.vc_column_container.vc_col-sm-2 {
+    display: none !important;
+  }
+  .contact-form-col #CF59fad1acbc2ca_1-row-1 input {
+    margin: 20px 0 !important;
+  }
+  .contact-form-col #fld_1131193_1 {
+    margin-top: 0 !important;
+  }
+  #ourAddressPoint #map {
+    height: 300px !important;
+  }
+  .contact-news-form-col .vc_column-inner {
+    padding: 10px 30px !important;
+  }
+  .contact-news-form-col #CF59fae6e5d4dbb_2-row-1 input {
+    margin: 20px 0 !important;
+  }
+  body.admin-bar .mobmenu {
+    top: 75px !important;
+  }
+  .square-list-general {
+    position: relative;
+    left: 50%;
+    transform: translateX(-46%);
+  }
+  a.baf-donate-button {
+    background-position: center;
+  }
+  #image-check {
+    width: 60px;
+    height: 60px;
+    margin-top: -33px;
+    margin-left: -29px;
+  }
+  .customSupport {
+    font-size: 1.2em;
+  }
+  .customPlease {
+    font-size: 1em;
+  }
+  /* .payPig .c100{top:-15px;} */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 35px;
+    height: 35px;
+    background: #bade86;
+    position: relative;
+    bottom: 0px;
+    cursor: pointer;
+    background: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/punkt.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 999;
+  }
+  .slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    border: 0;
+    position: relative;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/punkt.png');
+    z-index: 999;
+    transform: translateY(2px);
+  }
+  #demo {
+    width: 30%;
+  }
+  .waluta {
+    font-size: 2em;
+    font-weight: 700;
+    padding: 5px 20px;
+    padding-left: 2px;
+  }
+  #bottom-pasek {
+    height: 20px !important;
+    margin-bottom: 0 !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    top: 588px;
+    width: 100%;
+    display: none;
+  }
+  .pay-img img {
+    width: 88% !important;
+  }
+  #right-pasek {
+    position: absolute;
+    top: 330px;
+    right: 2%;
+    display: none;
+  }
+  #left-pasek {
+    position: absolute;
+    top: 301px;
+    left: 2%;
+    display: none;
+  }
+  #top-pasek {
+    height: 20px !important;
+    margin-bottom: 0 !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    top: 316px;
+    display: none;
+  }
+  .paypal-button.large {
+    margin: 15px 0 !important;
+    padding: 20px 20px !important;
+  }
+  .vc_custom_heading.amatic.font-blue.font-bold.our-mission-text-under-process-img.vc_custom_1512466815118 {
+    padding: 30px !important;
+  }
+  #hash-it {
+    padding: 20px 20px !important;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width:641px) and (max-width:1024px) {
+  #menu-krs,
+  #custom-search {
+    display: none !important;
+  }
+  a.baf-donate-button {
+    background-position: center;
+  }
+}

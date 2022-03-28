@@ -1,0 +1,128 @@
+#agreeDetails {
+  font-size: 14px;
+  color: #ABABAB;
+  margin-top: 15px;
+}
+
+.paymentOptions {
+  font-size: 0;
+}
+
+.paymentOption {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+}
+
+#paymentAmount {
+  display: none;
+  margin-top: 50px;
+}
+
+#optionPrzelewy24 img {
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.group-button {
+  display: none;
+}
+
+.size20 {
+  font-size: 20px;
+}
+
+.slider-button-donate.slider-button-donateEN {
+  background-image: url('/wp-content/uploads/2017/12/FP_donate_header_LP.svg');
+  background-repeat: no-repeat;
+}
+
+.cd-timeline-title-container+img {
+  padding-left: 15px;
+}
+
+.donate-euro {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.donate-euro-item {
+  display: inline-block;
+  width: 120px;
+  color: #0067b4;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.slider-button-pit {
+  padding: 8px 25px;
+  background: #f05251;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 3px;
+  line-height: 1;
+}
+
+.slider-button-pit:hover,
+.slider-button-pit:focus {
+  color: #fff;
+}
+
+.slider-button-pit span {
+  font-family: 'Amatic SC';
+  font-size: 48px;
+  display: block;
+  font-weight: 600;
+}
+
+.home_pit_btn {
+  margin-top: 20px;
+}
+
+.slider-text {
+  line-height: 1;
+}
+
+.slider-text span {
+  line-height: 1;
+  font-family: 'Amatic SC';
+}
+
+@media only screen and (max-width: 1349px) and (min-width: 992px) {
+  #slider-page .wpb_column.vc_column_container.vc_col-sm-6 {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #slider-page {
+    height: auto;
+    background-position: left top!important;
+  }
+  .slider-text.slider-text-first {
+    font-size: 50px!important;
+  }
+  .slider-text.slider-text-first span {
+    font-size: 90px!important;
+  }
+  .slider-text.slider-text-second {
+    font-size: 18px!important;
+  }
+  .slider-button-pit {
+    font-size: 16px;
+  }
+  .slider-button-pit span {
+    font-size: 35px;
+  }
+  #slider-page {
+    padding-top: 0!important;
+  }
+}

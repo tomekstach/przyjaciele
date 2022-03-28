@@ -1,0 +1,1119 @@
+@import 'const.less';
+@import 'section-accents.less';
+/* @large: ~"only screen and (min-width:1200px)";*/
+
+/* @full: ~"only screen and (min-width:1350px)";*/
+
+//* === GLOBALNE === */
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC:700');
+
+//@font-face {
+//    font-family: "../Amatic";
+//    src: url("../font/AmaticSC-Regular.ttf") format("truetype"),
+//    url("../font/Amatic-Bold.ttf") format("truetype");
+//}
+
+//@font-face {
+//    font-family: "Amatic SC";
+//    src: url('https://fonts.googleapis.com/css?family=Amatic+SC:700')
+//}
+
+* {
+  font-family: 'Raleway', sans-serif;
+  word-break: normal !important;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+}
+
+body {
+  background: @white;
+  overflow-x: hidden;
+}
+
+a,
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+
+.search.search-results {
+  h1.page-title {
+    font-size: 5em !important;
+
+    span {
+      font-family: "Amatic SC";
+    }
+  }
+
+}
+
+.post-header-style {
+  @media @xs {
+    margin: 0 0 -40px 0 !important;
+  }
+
+  @media @lg-m {
+    margin: 35px 0 35px 0 !important;
+  }
+}
+
+h1.page-title-left.amatic,
+h2.page-title-left.amatic {
+  text-align: left !important;
+
+  @media @xs {
+    text-align: center !important;
+  }
+
+  @media @md {
+    text-align: left !important;
+  }
+}
+
+// h1,h2,h3,h4{
+//     text-transform: uppercase !important;
+// }
+.amatic {
+  font-family: "Amatic SC" !important;
+}
+
+.raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+.right-text {
+  text-align: right !important;
+}
+
+.font-blue {
+  color: @blue  !important;
+}
+
+.font-red {
+  color: @red  !important;
+}
+
+.font-green {
+  color: @green  !important;
+}
+
+.font-white {
+  color: @white  !important;
+}
+
+.text-upper {
+  text-transform: uppercase !important;
+}
+
+.font-bold {
+  font-weight: 700 !important;
+}
+
+@media not all and (-webkit-min-device-pixel-ratio:0) {
+  .font-bold {
+    font-weight: 500 !important;
+  }
+}
+
+/*.word-break{
+	word-break: break-word;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap; 
+	word-wrap: break-word;
+}*/
+
+.size-seven {
+  font-size: 7em !important;
+}
+
+.size-five {
+  font-size: 5.5em;
+}
+
+.size-four {
+  font-size: 3.8em;
+}
+
+.size-third {
+  font-size: 3.5em;
+}
+
+.size-two-half {
+  font-size: 1.6em;
+}
+
+.size-two {
+  font-size: 2em;
+}
+
+.size-one {
+  font-size: 1.4em;
+}
+
+.entry-container {
+  padding-top: 0;
+}
+
+.entry-content {
+  margin-top: 0;
+}
+
+.hide-row {
+  display: none;
+}
+
+.marginZero {
+  margin-bottom: 0 !important;
+}
+
+.change-width {
+  margin: 20px 10px;
+}
+
+// mobilne paddingi
+.vc_row.wpb_row.vc_row-fluid {
+  @media @xs {
+    padding-left: 0 !important;
+    padding-right: 0 !important; // padding: 0 0 0 0 !important;
+  }
+}
+
+#page {
+  @media @xs {
+    padding-top: 0 !important;
+  }
+
+  @media @md {
+    padding-top: 90px !important;
+  }
+}
+
+.welcome-screen {
+  @media @lg-m {
+    padding: 28px 30px;
+  }
+}
+
+h1.amatic {
+  font-size: 5em !important;
+  padding-bottom: 25px;
+  text-align: right !important;
+
+  @media @xs {
+    font-size: 3.5em !important;
+    text-align: center !important;
+  }
+
+  @media @s {
+    font-size: 5em !important;
+  }
+
+  @media @tm {
+    font-size: 4em !important;
+  }
+
+  @media @md {
+    font-size: 4.5em !important;
+    text-align: right !important;
+
+  }
+
+  @media @lg {
+    font-size: 5.4em !important;
+  }
+
+  @media @lg-m {
+    font-size: 6em !important;
+  }
+}
+
+.title-para p {
+  padding-right: 28px;
+}
+
+h2.amatic {
+  font-size: 75px !important;
+
+  @media @xs {
+    font-size: 50px !important;
+    padding: 36px 0 36px 0 !important;
+    margin-left: 0 !important;
+  }
+
+  @media @s {
+    font-size: 55px !important;
+  }
+
+  @media @ts {
+    font-size: 65px !important;
+  }
+
+  @media @md {
+    font-size: 75px !important;
+  }
+}
+
+//h1.amatic {
+//    font-size: 100px !important;
+//    @media @xs {
+//        margin: 0 0 20px !important;
+//        font-size: 60px !important;
+//    }
+//}
+.home h2.amatic {
+  @media @xs {
+    margin-top: 0 !important;
+    font-size: 55px !important;
+    padding: 16px 0 0 !important;
+  }
+
+  @media @md {
+    font-size: 75px !important;
+  }
+
+
+}
+
+// h2.smaller-heading{
+// 	font-family: "Amatic SC";
+// }
+// .button-fade{
+// 	// max-width: 360px;
+// 	width: 300px !important;
+// }
+// .vc_row.wpb_row.vc_row-fluid.vc_row-has-fill {
+//     @media @xs {
+//         padding: 0 !important;
+//         margin-top: 0 !important;
+//         margin-bottom: 0 !important;
+//     }
+// }
+// .top-image {
+//     @media @xs {
+//         background-color: #ffffff98;
+//     }
+// }
+.vc_row {}
+
+/* owl carousel */
+
+.owl-nav {
+  width: 100%;
+  position: absolute;
+  top: 40%; // height: 50px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 0;
+  display: block !important;
+
+  img {
+    width: 50px;
+    height: 50px;
+    opacity: 0.4;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  @media @xs {
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  @media @s {
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  left: -50px;
+
+  @media @xs {
+    left: 0;
+  }
+
+  @media @s {
+    left: 10%;
+  }
+
+  @media @ts {
+    left: -5%;
+  }
+
+  @media @tm {
+    left: -1%;
+  }
+}
+
+.owl-next {
+  left: auto;
+  right: -50px;
+
+  @media @xs {
+    right: 0;
+  }
+
+  @media @s {
+    right: 10%;
+  }
+
+  @media @ts {
+    right: -5%;
+  }
+
+  @media @tm {
+    right: -1%;
+  }
+}
+
+.owl-dots {
+  display: none;
+  max-width: 80%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  overflow: hidden;
+
+  .owl-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 8px;
+    border: 1px solid #266ab2;
+    background: @white;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+    &.active {
+      background: #266ab2;
+    }
+  }
+
+  @media @xs {
+    display: flex;
+    max-width: 100%;
+  }
+
+  @media @tm {
+    display: none;
+  }
+}
+
+
+.post-content-col a,
+.post-content-custom a {
+  text-decoration: underline !important;
+  font-weight: 600;
+}
+
+hr {
+  margin-top: 12px;
+}
+
+#colophon .second a {
+  font-size: 0.9em;
+}
+
+#equipment-row-car {
+  .owl-dots {
+    bottom: 65px;
+  }
+
+  @media @ts {
+    .owl-dots {
+      bottom: -40px;
+    }
+  }
+
+  @media @md {
+    &.owl-carousel {
+      margin: 0 auto;
+    }
+  }
+}
+
+.foot-face img,
+.foot-linked img {
+  margin-right: 15px;
+  width: auto;
+  height: 25px;
+}
+
+.foot-bip img {
+  margin-right: 15px;
+  width: auto;
+  height: 35px;
+
+  @media @md {
+    margin-right: 8px;
+    height: 28px;
+  }
+}
+
+/*BUTTONY DO SCROLLOWANIA ORAZ WYKONYWANIA INNYCH AKCJI*/
+
+.button-scroll {
+  text-align: center;
+  display: block;
+  background: @blue;
+  color: @white;
+  border-bottom: 0;
+  font-size: 3.5em;
+  width: 100% !important;
+  padding: 0 10px;
+  margin: 0 auto;
+  font-family: "Amatic SC" !important;
+  border-radius: 10px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid @blue  !important;
+
+  &:hover {
+    background-color: #fff !important;
+    color: @blue  !important;
+    border: 2px solid @blue  !important;
+  }
+
+  @media @xs {
+    width: 90%;
+    margin: 15px auto;
+    font-size: 2.8em;
+  }
+
+  @media @ts {
+    width: fit-content;
+    margin: 15px auto 45px auto;
+  }
+
+  @media @md {
+    width: fit-content;
+    margin: 15px auto 30px auto;
+    font-size: 3em;
+  }
+}
+
+.button-download {
+  text-align: center;
+  display: block;
+  text-transform: uppercase;
+  background: @blue;
+  color: @white;
+  border-bottom: 0;
+  font-size: 1.5em;
+  width: 90%;
+  margin: 0 auto;
+  padding: 7px 0px;
+  border-radius: 10px !important;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid @blue  !important;
+}
+
+.button-download:hover {
+  background-color: #fff !important;
+  color: @blue  !important;
+  border: 2px solid @blue  !important;
+}
+
+.button-fade {
+  text-align: center;
+  display: block;
+  background: @blue;
+  color: @white;
+  border-bottom: 0;
+  font-size: 1.5em;
+  max-width: 360px;
+  margin: 0 auto;
+  border-radius: 10px !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  border: 2px solid @blue  !important;
+  padding: 7px 28px;
+}
+
+/* ODOMETER NUMBERS*/
+
+.odometer-inside {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+
+}
+
+.lvca-odometers.lvca-container {
+  .lvca-odometer {
+    position: relative;
+    margin-top: 100px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: -100px;
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .lvca-odometer:nth-child(1) {
+    &:after {
+      background: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/icon1-1.png)no-repeat center;
+      background-size: contain;
+    }
+  }
+
+  .lvca-odometer:nth-child(2) {
+    &:after {
+      background: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/icon2.png)no-repeat center;
+      background-size: contain;
+
+    }
+  }
+
+  .lvca-odometer:nth-child(3) {
+    .lvca-number.odometer.odometer-auto-theme {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      background: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/10/icon1.png)no-repeat center;
+      background-size: contain;
+
+    }
+  }
+
+  @media @xs {
+    margin-top: 40px;
+
+    .lvca-odometer {
+      width: 100%;
+    }
+
+    .lvca-stats-title-wrap {
+      padding: 0;
+      margin-top: 30px;
+
+      .lvca-stats-title {
+        line-height: 22px;
+        font-size: 18px;
+      }
+
+      span {
+        font-size: 26px !important;
+      }
+    }
+
+    .odometer-formatting-mark:after {
+      top: 1px;
+    }
+
+    .lvca-number.odometer.odometer-auto-theme span {
+      font-size: 32px !important;
+    }
+
+  }
+
+  @media @ts {
+    margin-top: 60px;
+
+    .lvca-odometer {
+      width: 31.03448%;
+      clear: none !important;
+
+    }
+
+    .lvca-number.odometer.odometer-auto-theme span {
+      font-size: 35px !important;
+
+    }
+
+    .odometer-formatting-mark:after {
+      font-size: 30px !important;
+      position: relative;
+      top: -3px;
+    }
+
+    .lvca-stats-title-wrap {
+      margin-top: 10px;
+
+      .lvca-stats-title {
+        line-height: 22px;
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media @tm {
+    .lvca-number.odometer.odometer-auto-theme span {
+      font-size: 45px !important;
+    }
+
+    .odometer-formatting-mark:after {
+      font-size: 40px !important;
+      position: relative;
+      top: -3px;
+    }
+  }
+
+
+}
+
+
+#counter-row {
+  @media @xs {
+    padding: 50px 0 !important;
+  }
+}
+
+#news-row {
+  .realizacja__inner {
+    text-align: center;
+  }
+
+  @media @xs {
+    padding-bottom: 20px !important;
+
+    .wpb_raw_code {
+      margin: 0 !important;
+    }
+
+    .wpisy-col.wpb_column {
+      .vc_column-inner {
+        // display: none !important;
+        padding: 0 !important;
+      }
+    }
+
+    h2 {
+      margin-bottom: 60px !important;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+    .equ_medical_img {
+      margin-bottom: 60px;
+    }
+
+    .owl-dots {
+      top: 160px;
+    }
+  }
+
+  @media @ts {
+    .equ_medical_img {
+      margin-bottom: 20px;
+    }
+
+    .owl-dots {
+      top: auto;
+      bottom: -40px;
+    }
+  }
+}
+
+.bip_show {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.bip_hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.slider-text {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 48px;
+  margin-bottom: 0;
+  /*	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;*/
+}
+
+.slider-text-first {
+  padding-bottom: 16px;
+}
+
+.slider-button-donate {
+  width: 249px;
+  height: 70px;
+  display: block;
+  margin: auto;
+  background-image: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/FP_donate_big_LP.svg');
+  background-repeat: no-repeat;
+}
+
+.slider-text-slides {
+  .wpb_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .wpb_content_element.wpb_raw_html {
+    padding: 0 24px 0 48px;
+    margin-bottom: 0 !important;
+    max-width: 760px;
+  }
+
+  .bottom-button-slider button {
+    width: auto !important;
+    padding: 8px 26px !important;
+    font-size: 28px;
+  }
+
+  @media @xs {
+    .wpb_wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .wpb_content_element.wpb_raw_html {
+      padding: 0;
+    }
+
+    .bottom-button-slider button {
+      margin-top: 20px !important;
+      display: inline-block;
+    }
+  }
+
+  @media @lg {
+    .wpb_wrapper {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+    }
+
+    .wpb_content_element.wpb_raw_html {
+      padding: 0 24px 0 48px;
+      margin-bottom: 0 !important;
+    }
+
+    .bottom-button-slider button {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.donate_dzieci {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  text-align: center;
+  background-image: url('http://www.fundacjaprzyjaciol.org/wp-content/uploads/2018/01/bg_donate_children.jpg');
+  background-size: contain;
+  background-position: center 67%;
+  height: 210px;
+  font-size: 38px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  background-repeat: no-repeat;
+
+  &>div {
+    position: relative;
+    top: 130px;
+  }
+
+  .donate_ile_dzieci {
+    color: #fff;
+  }
+
+  .donate_text_dzieci {
+    color: #b4dd76;
+  }
+
+  p {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    transform: translateY(-22%);
+    font-size: 1em;
+  }
+}
+
+#bip-cloud {
+  height: 140px;
+  z-index: 999 !important;
+  background-color: #0067b4 !important;
+  position: absolute;
+  left: 0;
+  opacity: 1;
+  visibility: hidden;
+  padding: 20px 0;
+  width: 102%;
+  display: block;
+  margin-top: -180px;
+  transition: all .3s ease-in-out;
+
+  @media @xs {
+    height: auto;
+    position: absolute;
+    bottom: 420px;
+  }
+
+  @media @ts {
+    bottom: 340px;
+  }
+
+  @media @tm {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    padding: 20px 0;
+    width: 102%;
+    bottom: 190px;
+  }
+
+  p {
+    display: block;
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-22%);
+    font-size: 1em;
+
+    @media @xs {
+      top: 0px;
+      transform: none;
+    }
+
+  }
+}
+
+#cd-timeline {
+  @media @tm {
+    padding-bottom: 300px !important;
+  }
+
+  @media @lg-m {
+    padding-bottom: 300px !important;
+  }
+}
+
+.cd-timeline-block {
+  @media @tm {
+    height: 150px !important;
+  }
+
+  @media @lg-m {
+    height: 150px !important;
+  }
+}
+
+
+.home #newsletter {
+  @media @xs {
+    .wpb_raw_code {
+      margin: 0 !important;
+    }
+
+    h2.amatic.vc_custom_heading {
+      margin-bottom: 30px !important;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    .caldera-grid .row {
+      margin: 0;
+    }
+
+    .caldera-grid .form-group {
+      margin-bottom: 28px !important;
+    }
+
+    form div[class*="col-"] {
+      padding: 0;
+    }
+
+    form {
+      p {
+        text-align: left;
+
+      }
+    }
+  }
+
+  @media @ts {
+    .caldera-grid .form-group {
+      margin: 0 8px !important;
+    }
+  }
+
+  @media @md {
+    h2 {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+footer#colophon {
+  .conatct-list {
+    text-align: center !important;
+  }
+
+  @media @xs {
+    .conatct-list {
+      text-align: center !important;
+    }
+
+    .first.row {
+      text-align: left !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: fit-content;
+      margin: auto;
+    }
+
+    .information-text {
+      margin-top: 8px;
+      font-size: 12px;
+      text-align: left;
+
+      p {
+        font-size: 13px;
+      }
+    }
+
+    .img-footer-icon {
+      -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+      order: 1;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+
+    .footer-mail {
+      -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+      order: 2;
+      padding-left: 15px !important;
+    }
+
+    .footer-number {
+      -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+      order: 3;
+    }
+
+    .footer-krs {
+      -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+      order: 4;
+    }
+  }
+
+  @media @ts {
+    .first.row {
+      text-align: center !important;
+      display: block;
+      width: 100%;
+    }
+
+    .information-text {
+      margin-bottom: 8px;
+    }
+
+    .img-footer-icon {
+      justify-content: flex-start;
+      margin-top: 16px;
+    }
+
+  }
+
+  @media @tm {
+    .contact-list {
+      text-align: center !important;
+      display: block;
+    }
+
+    .img-footer-icon {
+      margin-top: 0;
+      display: block;
+    }
+  }
+
+  @media @lg-m {
+    p.contact-list {
+      text-align: center !important;
+      font-size: 1.2em;
+    }
+  }
+}
+
+
+.contact-left-col {
+  p.conatct-list {
+    margin-bottom: 10px;
+  }
+}

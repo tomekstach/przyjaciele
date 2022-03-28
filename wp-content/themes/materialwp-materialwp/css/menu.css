@@ -1,0 +1,198 @@
+.mobmenur-container {
+  top: 50%!important;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+
+/* .wpb_raw_code.wpb_content_element.wpb_raw_html{margin-bottom:0!important} */
+
+span#cn-notice-text a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  border-bottom: 1px solid #fff
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  #logo {
+    display: none
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1349px) {
+  #logo {
+    display: block
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  #top-bar {
+    display: block
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1349px) {
+  #top-bar {
+    display: block
+  }
+}
+
+#mob-top-bar {
+  background-color: #eee;
+  height: 30px;
+  position: relative
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  #mob-top-bar {
+    position: fixed;
+    top: -30px;
+    right: 0;
+    z-index: 9999;
+    width: 100%
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1349px) {
+  #mob-top-bar {
+    position: relative
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  .top-bar-icon {
+    width: 100%
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1349px) {
+  .top-bar-icon {
+    width: 1136px
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  .dropdown-lang {
+    display: none
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1349px) {
+  .dropdown-lang {
+    display: inline-block
+  }
+}
+
+a.mobi-donate {
+  position: absolute;
+  right: 80px;
+  width: 90px;
+  top: 22px;
+  height: auto
+}
+
+@media only screen and (min-width:0px) and (max-width:1349px) {
+  a.mobi-donate {
+    right: 50px
+  }
+}
+
+@media only screen and (min-width:1025px) and (max-width:1349px) {
+  #menu-page.navbar #logo {
+    width: 180px;
+    height: 120px
+  }
+  #menu-page.navbar li a {
+    font-size: 13px;
+    padding: 20px 8px
+  }
+  #menu-page.navbar .menu-donate {
+    margin-right: 20px
+  }
+  #menu-page.navbar .menu-donate a {
+    margin-left: 20px;
+    font-size: 1.8em
+  }
+}
+
+@media only screen and (min-width:1200px) and (max-width:1349px) {
+  #menu-page.navbar #logo {
+    height: 128px
+  }
+  #menu-page.navbar li a {
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px
+  }
+}
+
+.dropdown-menu>li>a {
+  padding: 3px 20px!important
+}
+
+.menu-donate a,
+.menu-donate-button-en {
+  height: 41px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow: -moz-hidden-unscrollable;
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_smallbar.svg);
+  background-repeat: no-repeat;
+  width: 107px;
+  /* 	margin:10px 0 0 50px; */
+}
+
+.menu-donate a:hover,
+.menu-donate-button-en:hover {
+  background-image: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/11/FP_donate_smallbar_action.svg);
+  background-repeat: no-repeat
+}
+
+.menu-donate-menu-mobile-en-container {
+  z-index: 999999;
+  position: absolute;
+  right: 0
+}
+
+#menu-page.navbar li.menu-home a {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 0;
+}
+
+#menu-page.navbar li.menu-home a:before {
+  content: "\f015";
+  font-size: 16px;
+  margin: 2px 0;
+  display: block;
+}
+
+
+/*#menu-page li.menu-home a{
+	background:url(/wp-content/uploads/2018/09/home.png) center no-repeat;
+	color:transparent;
+	width:25px;
+	font-size: 0;
+}*/
+
+
+/*@media only screen and (max-width: 1349px) and (min-width: 1200px){
+#menu-page.navbar li.menu-home a {
+	font-size:0;
+}
+}
+@media only screen and (max-width: 1349px) and (min-width: 1025px){
+#menu-page.navbar li.menu-home a {
+	font-size:0;
+}
+}*/
+
+.mobmenu_content #mobmenuright li a {
+  font-family: 'Roboto', sans-serif;
+}
