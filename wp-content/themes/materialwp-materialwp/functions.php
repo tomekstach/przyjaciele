@@ -157,7 +157,7 @@ function az()
   wp_enqueue_style('owl', get_template_directory_uri() . '/owl/owl.carousel.min.css');
   wp_enqueue_style('owl-theme', get_template_directory_uri() . '/owl/owl.theme.default.min.css');
   wp_enqueue_script('owl-script', get_stylesheet_directory_uri() . '/owl/owl.carousel.min.js', array('jquery'));
-  wp_enqueue_script('custom-script-query', get_stylesheet_directory_uri() . '/custom_script_jquery.js', array('jquery'), '2.0.1');
+  wp_enqueue_script('custom-script-query', get_stylesheet_directory_uri() . '/custom_script_jquery.js', array('jquery'), '3.0.0');
 }
 add_action('wp_enqueue_scripts', 'az');
 
@@ -233,13 +233,12 @@ function medycznyEq()
           style="background: url(<?php the_post_thumbnail_url(); ?>)no-repeat; background-size: cover;background-position: center">
           <!-- <?php the_post_thumbnail(array(1024, 512), array('class' => 'img-responsive')); ?>  -->
         </div>
-        <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-        <a href="<?php the_permalink(); ?>">
+        <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?> <a href="<?php the_permalink(); ?>">
           <div class="equ_medical_info payPig">
+            <div style="display: none;"><?php echo get_the_content(); ?></div>
             <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
               <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-              <a href="<?php the_permalink(); ?>"><img id="image-check"
-                  src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png"></a>
+              <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
               <?php } else { ?>
               <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
                   class="carousel-procent">%</span></span>
@@ -249,37 +248,34 @@ function medycznyEq()
               </div>
               <?php } ?>
             </div>
-            <a href="<?php the_permalink(); ?>">
-              <p class="aim font-blue raleway center-text customPlease">WPŁAĆ</p>
-              <p class="aim font-blue raleway center-text size-two-new font-bold customSupport"
-                style="font-size: 1.4em;">I POMÓŻ TERAZ!</p>
-            </a>
+            <p class="aim font-blue raleway center-text customPlease">WPŁAĆ</p>
+            <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.4em;">
+              I POMÓŻ TERAZ!</p>
           </div>
-        </a>
-        <?php } else { ?>
-        <div class="equ_medical_info">
-          <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
-            <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-            <a href="<?php the_permalink(); ?>"><img id="image-check"
-                src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png"></a>
-            <?php } else { ?>
-            <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
-                class="carousel-procent">%</span></span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
+          <?php } else { ?>
+          <div class="equ_medical_info">
+            <div style="display: none;"><?php echo get_the_content(); ?></div>
+            <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
+              <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
+              <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
+              <?php } else { ?>
+              <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
+                  class="carousel-procent">%</span></span>
+              <div class="slice">
+                <div class="bar"></div>
+                <div class="fill"></div>
+              </div>
+              <?php } ?>
             </div>
-            <?php } ?>
+            <p class="aim font-blue raleway center-text aim-heading">CEL:</p>
+            <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
+              <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> zł</p>
           </div>
-          <p class="aim font-blue raleway center-text aim-heading">CEL:</p>
-          <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
-            <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> zł</p>
+          <?php } ?>
+        </a>
+        <div class="equ_medical_button">
+          <a href="<?php the_permalink(); ?>">WIĘCEJ</a>
         </div>
-        <?php } ?>
-      </a>
-      <div class="equ_medical_button">
-        <a href="<?php the_permalink(); ?>">WIĘCEJ</a>
-      </div>
     </div>
   </div>
   <?php
@@ -328,10 +324,9 @@ function mediaclEq()
           style="background: url(<?php the_post_thumbnail_url(); ?>)no-repeat; background-size: cover;background-position: center">
           <!-- <?php the_post_thumbnail(array(1024, 512), array('class' => 'img-responsive')); ?>  -->
         </div>
-      </a>
-      <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-      <a href="<?php the_permalink(); ?>">
+        <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
         <div class="equ_medical_info payPig">
+          <div style="display: none;"><?php echo get_the_content(); ?></div>
           <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
             <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
             <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
@@ -348,14 +343,12 @@ function mediaclEq()
           <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.4em;">
             Support</p>
         </div>
-      </a>
-      <?php } else { ?>
-      <a href="<?php the_permalink(); ?>">
+        <?php } else { ?>
         <div class="equ_medical_info">
+          <div style="display: none;"><?php echo get_the_content(); ?></div>
           <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
             <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-            <a href="<?php the_permalink(); ?>"><img id="image-check"
-                src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png"></a>
+            <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
             <?php } else { ?>
             <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
                 class="carousel-procent">%</span></span>
@@ -369,9 +362,8 @@ function mediaclEq()
           <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
             <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> PLN</p>
         </div>
+        <?php } ?>
       </a>
-      <?php } ?>
-
       <div class="equ_medical_button">
         <a href="<?php the_permalink(); ?>">READ MORE</a>
       </div>
@@ -674,26 +666,22 @@ function currentProjectPl()
         </div>
 
         <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-        <a href="<?php the_permalink(); ?>">
-          <div class="equ_medical_info payPig">
-            <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
-              <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-              <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
-              <?php } else { ?>
-              <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
-                  class="carousel-procent">%</span></span>
-              <div class="slice">
-                <div class="bar"></div>
-                <div class="fill"></div>
-              </div>
-              <?php } ?>
+        <div class="equ_medical_info payPig">
+          <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
+            <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
+            <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
+            <?php } else { ?>
+            <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
+                class="carousel-procent">%</span></span>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
             </div>
-            <a href="<?php the_permalink(); ?>">
-              <p class="aim font-blue raleway center-text customPlease">WPŁAĆ</p>
-              <p class="aim font-blue raleway center-text size-two-new font-bold customSupport">I POMÓŻ TERAZ!</p>
-            </a>
+            <?php } ?>
           </div>
-        </a>
+          <p class="aim font-blue raleway center-text customPlease">WPŁAĆ</p>
+          <p class="aim font-blue raleway center-text size-two-new font-bold customSupport">I POMÓŻ TERAZ!</p>
+        </div>
         <?php } else { ?>
         <div class="equ_medical_info">
           <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
@@ -881,7 +869,7 @@ function payDonateGrid($atts = [], $content = null, $tag = '')
     $numberId++;
   ?>
 <div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid">
-  <div class="payDonateGrid<?php echo $numberId; ?>">
+  <div class="payDonateItem">
     <div class="equ_medical_title">
       <h2 class="font-blue raleway center-text">
         <a class="font-bold" href="<?php the_permalink(); ?>">
@@ -897,6 +885,7 @@ function payDonateGrid($atts = [], $content = null, $tag = '')
     </a>
     <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
     <div class="equ_medical_info payPig">
+      <div style="display: none;"><?php echo get_the_content(); ?></div>
       <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
         <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
         <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
@@ -915,6 +904,7 @@ function payDonateGrid($atts = [], $content = null, $tag = '')
     </div>
     <?php } else { ?>
     <div class="equ_medical_info">
+      <div style="display: none;"><?php echo get_the_content(); ?></div>
       <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
         <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
         <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
@@ -975,7 +965,7 @@ function payDonateGridPl($atts = [], $content = null, $tag = '')
     $numberId++;
   ?>
 <div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid">
-  <div class="payDonateGrid<?php echo $numberId; ?>">
+  <div class="payDonateItem">
     <div class="equ_medical_title">
       <h2 class="font-blue raleway center-text">
         <a class="font-bold" href="<?php the_permalink(); ?>">
@@ -988,49 +978,46 @@ function payDonateGridPl($atts = [], $content = null, $tag = '')
         style="background-image: url(<?php the_post_thumbnail_url(); ?>);background-repeat: no-repeat; background-size: cover;background-position: center">
         <!-- <?php the_post_thumbnail(array(1024, 512), array('class' => 'img-responsive')); ?>  -->
       </div>
-
-      <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-      <a href="<?php the_permalink(); ?>">
-        <div class="equ_medical_info payPig">
-          <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
-            <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-            <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
-            <?php } else { ?>
-            <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
-                class="carousel-procent">%</span></span>
-            <div class="slice">
-              <div class="bar"></div>
-              <div class="fill"></div>
-            </div>
-            <?php } ?>
-          </div>
-          <a href="<?php the_permalink(); ?>">
-            <p class="aim font-blue raleway center-text customPlease" style="font-size: 1.1em;">WPŁAĆ</p>
-            <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.3em;">
-              I POMÓŻ TERAZ!</p>
-          </a>
-        </div>
-      </a>
-      <?php } else { ?>
-      <div class="equ_medical_info">
-        <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
-          <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
-          <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
-          <?php } else { ?>
-          <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
-              class="carousel-procent">%</span></span>
-          <div class="slice">
-            <div class="bar"></div>
-            <div class="fill"></div>
-          </div>
-          <?php } ?>
-        </div>
-        <p class="aim font-blue raleway center-text aim-heading">CEL:</p>
-        <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
-          <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> zł</p>
-      </div>
-      <?php } ?>
     </a>
+    <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
+    <div class="equ_medical_info payPig">
+      <div style="display: none;"><?php echo get_the_content(); ?></div>
+      <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
+        <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
+        <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
+        <?php } else { ?>
+        <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
+            class="carousel-procent">%</span></span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+        <?php } ?>
+      </div>
+      <p class="aim font-blue raleway center-text customPlease" style="font-size: 1.1em;">WPŁAĆ</p>
+      <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.3em;">
+        I POMÓŻ TERAZ!</p>
+    </div>
+    <?php } else { ?>
+    <div class="equ_medical_info">
+      <div style="display: none;"><?php echo get_the_content(); ?></div>
+      <div class="c100 p<?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?> green">
+        <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
+        <img id="image-check" src="<?php echo esc_url(site_url('/')); ?>wp-content/uploads/2017/10/icon.png">
+        <?php } else { ?>
+        <span class="font-blue"><?php echo get_post_meta(get_the_ID(), 'percentMedicialEquipment', TRUE); ?><span
+            class="carousel-procent">%</span></span>
+        <div class="slice">
+          <div class="bar"></div>
+          <div class="fill"></div>
+        </div>
+        <?php } ?>
+      </div>
+      <p class="aim font-blue raleway center-text aim-heading">CEL:</p>
+      <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
+        <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> zł</p>
+    </div>
+    <?php } ?>
   </div>
 </div>
 <?php

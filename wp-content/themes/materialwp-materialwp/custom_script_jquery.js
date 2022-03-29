@@ -305,7 +305,7 @@ jQuery(document).ready(function($) {
     }
   });
   if (window.location.href.indexOf("/en") > -1) {
-    console.log('EN !!!');
+    // console.log('EN !!!');
     $(".search-field").attr("placeholder", "Search...");
     $("#cn-notice-text").html('<span>By continuing to browse our site you agree to our use of <strong><a href="https://fundacjaprzyjaciol.org/en/cookies-policy/">cookies </a></strong> and <strong><a href="https://fundacjaprzyjaciol.org/en/privacy-cookies-policy/">Privacy Policy</a></strong>.</span><span class="close"></span>');
     $("#logo img").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/fp_logo_en.svg");
@@ -325,7 +325,7 @@ jQuery(document).ready(function($) {
     $("#bip-cloud p").html('<p><a href="www.fundacjaprzyjaciol.org">www.fundacjaprzyjaciol.org</a> is also a site of Biuletyn Informacji Publicznej (Bulletin of Public Information), according to the obligation requested by Article 6, point 6 of the Polish Law on Access to Public Information from September 6, 2001. Information included in the financial reports and reports on our activities (folder: Who we are / Documents) meet the requirements of the Regulation of the Minister of Internal Affairs and Administration regarding the Public Information Bulletin BIP from January 18, 2007.</p>');
   }
   if (window.location.href.indexOf("/pl/") > -1) {
-    console.log('PL !!!');
+    // console.log('PL !!!');
     $('.single-donate-thansk-row a.button-donate-post').attr("href", "http://www.fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#donate_button_hook");
     $(".search-field").attr("placeholder", "Wyszukaj...");
     $("#cn-notice-text").html('<span>Korzystając ze strony, wyrażasz zgodę na używanie <strong><a href="http://www.fundacjaprzyjaciol.org/pl/cookies-policy-pl/">cookies</a></strong> i akceptujesz <strong><a href="http://www.fundacjaprzyjaciol.org/pl/polityka-prywatnosci/"> Politykę prywatności</a></strong>.</span><span class="close"></span>');
@@ -406,231 +406,29 @@ jQuery(document).ready(function($) {
     $(".mobi-donate img").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_menu_PL.svg");
   }
 
-  $('.payDonateGrid1').click(function() {
+  $('#pay-donate-row-custom-grid').find('.payDonateItem').click(function(e) {
     $('#testowy-row').css('display', 'block');
     $('#testowy-row h2').text('');
-    $('.payDonateGrid1 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var textTest = $('.payDonateGrid1 .equ_medical_title h2').text();
+    $(this).find('.equ_medical_title h2').clone().appendTo('#testowy-row h3');
+    var test = $(this).find('.payGridImage').attr('test-background');
+    var accountNumber = $(this).find('#account-number').text();
+    // console.log(accountNumber.length);
+    if (accountNumber.length > 0) {
+      $('#testowy-row .donate-header-title').append('<p id="donateAccountNumber" style="text-align: center;position: absolute;width: 100%;">' + accountNumber + '</p>');
+    } else {
+      $('#donateAccountNumber').remove();
+    }
+    $('.pay-img img').attr('src', test);
+    $('#testowy-row h2').css('font-size', '22px');
+    // $('#testowy-row h2').addClass("amatic");
+    var textTest = $(this).find('.equ_medical_title h2').text().replace(/\r?\n|\r/g, '').trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    console.log(textTest);
     $("#p24_description").val("Wsparcie/ " + textTest);
     $("#item_name_custom").val("Wsparcie/ " + textTest);
     $("#tradition_transfer_title").text("Title: " + textTest);
     if (window.location.href.indexOf("/pl/") > -1) {
       $("#tradition_transfer_title").text("Tytuł: " + textTest);
     }
-    var test1 = $('.payDonateGrid1 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test1);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    $(".pay-img").attr("style", "background-image:url(" + test1 + ");");
-  });
-  $('.payDonateGrid2').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid2 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test2 = $('.payDonateGrid2 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test2);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest2 = $('.payDonateGrid2 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest2);
-    $("#item_name_custom").val("Wsparcie/ " + textTest2);
-    $("#tradition_transfer_title").text("Title: " + textTest2);
-    if (window.location.href.indexOf("/pl/") > -1) {
-      $("#tradition_transfer_title").text("Tytuł: " + textTest2);
-    }
-    $(".pay-img").attr("style", "background-image:url(" + test2 + ");");
-  });
-  $('.payDonateGrid3').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid3 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test3 = $('.payDonateGrid3 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test3);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest3 = $('.payDonateGrid3 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest3);
-    $("#item_name_custom").val("Wsparcie/ " + textTest3);
-    $("#tradition_transfer_title").text("Title: " + textTest3);
-    if (window.location.href.indexOf("/pl/") > -1) {
-      $("#tradition_transfer_title").text("Tytuł: " + textTest3);
-    }
-    $(".pay-img").attr("style", "background-image:url(" + test3 + ");");
-  });
-  $('.payDonateGrid4').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid4 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test4 = $('.payDonateGrid4 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test4);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest4 = $('.payDonateGrid4 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest4);
-    $("#item_name_custom").val("Wsparcie/ " + textTest4);
-    $("#tradition_transfer_title").text("Title: " + textTest4);
-    $(".pay-img").attr("style", "background-image:url(" + test4 + ");");
-  });
-  $('.payDonateGrid5').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid5 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test5 = $('.payDonateGrid5 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test5);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest5 = $('.payDonateGrid5 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest5);
-    $("#item_name_custom").val("Wsparcie/ " + textTest5);
-    $("#tradition_transfer_title").text("Title: " + textTest5);
-    $(".pay-img").attr("style", "background-image:url(" + test5 + ");");
-  });
-  $('.payDonateGrid6').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid6 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test6 = $('.payDonateGrid6 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test6);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest6 = $('.payDonateGrid6 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest6);
-    $("#item_name_custom").val("Wsparcie/ " + textTest6);
-    $("#tradition_transfer_title").text("Title: " + textTest6);
-    $(".pay-img").attr("style", "background-image:url(" + test6 + ");");
-  });
-  $('.payDonateGrid7').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid7 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test7 = $('.payDonateGrid7 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test7);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest7 = $('.payDonateGrid7 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest7);
-    $("#item_name_custom").val("Wsparcie/ " + textTest7);
-    $("#tradition_transfer_title").text("Title: " + textTest7);
-    $(".pay-img").attr("style", "background-image:url(" + test7 + ");");
-  });
-  $('.payDonateGrid8').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid8 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test8 = $('.payDonateGrid8 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test8);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest8 = $('.payDonateGrid8 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest8);
-    $("#item_name_custom").val("Wsparcie/ " + textTest8);
-    $("#tradition_transfer_title").text("Title: " + textTest8);
-    $(".pay-img").attr("style", "background-image:url(" + test8 + ");");
-  });
-  $('.payDonateGrid9').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid9 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test9 = $('.payDonateGrid9 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test9);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest9 = $('.payDonateGrid9 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest9);
-    $("#item_name_custom").val("Wsparcie/ " + textTest9);
-    $("#tradition_transfer_title").text("Title: " + textTest9);
-    $(".pay-img").attr("style", "background-image:url(" + test9 + ");");
-  });
-  $('.payDonateGrid10').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid10 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test10 = $('.payDonateGrid10 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test10);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest10 = $('.payDonateGrid10 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest10);
-    $("#item_name_custom").val("Wsparcie/ " + textTest10);
-    $("#tradition_transfer_title").text("Title: " + textTest10);
-    $(".pay-img").attr("style", "background-image:url(" + test10 + ");");
-  });
-  $('.payDonateGrid11').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid11 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test11 = $('.payDonateGrid11 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test11);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest11 = $('.payDonateGrid11 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest11);
-    $("#item_name_custom").val("Wsparcie/ " + textTest11);
-    $(".pay-img").attr("style", "background-image:url(" + test11 + ");");
-  });
-  $('.payDonateGrid12').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid12 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test12 = $('.payDonateGrid12 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test12);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest12 = $('.payDonateGrid12 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest12);
-    $("#item_name_custom").val("Wsparcie/ " + textTest12);
-    $(".pay-img").attr("style", "background-image:url(" + test12 + ");");
-  });
-  $('.payDonateGrid13').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid13 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test13 = $('.payDonateGrid13 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test12);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest13 = $('.payDonateGrid13 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest13);
-    $("#item_name_custom").val("Wsparcie/ " + textTest13);
-    $(".pay-img").attr("style", "background-image:url(" + test13 + ");");
-  });
-  $('.payDonateGrid14').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid14 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test14 = $('.payDonateGrid14 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test14);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest14 = $('.payDonateGrid14 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest14);
-    $("#item_name_custom").val("Wsparcie/ " + textTest14);
-    $(".pay-img").attr("style", "background-image:url(" + test14 + ");");
-  });
-  $('.payDonateGrid15').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid15 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test15 = $('.payDonateGrid15 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test15);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest15 = $('.payDonateGrid15 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest15);
-    $("#item_name_custom").val("Wsparcie/ " + textTest15);
-    $(".pay-img").attr("style", "background-image:url(" + test15 + ");");
-  });
-  $('.payDonateGrid16').click(function() {
-    $('#testowy-row').css('display', 'block');
-    $('#testowy-row h2').text('');
-    $('.payDonateGrid16 .equ_medical_title h2').clone().appendTo('#testowy-row h3');
-    var test16 = $('.payDonateGrid16 .payGridImage').attr('test-background');
-    $('.pay-img img').attr('src', test16);
-    $('#testowy-row h2').css('font-size', '22px');
-    // $('#testowy-row h2').addClass("amatic");
-    var textTest16 = $('.payDonateGrid16 .equ_medical_title h2').text();
-    $("#p24_description").val("Wsparcie/ " + textTest16);
-    $("#item_name_custom").val("Wsparcie/ " + textTest16);
-    $(".pay-img").attr("style", "background-image:url(" + test16 + ");");
+    $(".pay-img").attr("style", "background-image:url(" + test + ");");
   });
 });
