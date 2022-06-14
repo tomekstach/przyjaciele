@@ -322,7 +322,6 @@ function mediaclEq()
       <a href="<?php the_permalink(); ?>">
         <div class="equ_medical_img"
           style="background: url(<?php the_post_thumbnail_url(); ?>)no-repeat; background-size: cover;background-position: center">
-          <!-- <?php the_post_thumbnail(array(1024, 512), array('class' => 'img-responsive')); ?>  -->
         </div>
         <?php if (get_post_meta(get_the_ID(), 'field_id', TRUE)) { ?>
         <div class="equ_medical_info payPig">
@@ -341,7 +340,8 @@ function mediaclEq()
           </div>
           <p class="aim font-blue raleway center-text customPlease">Please:</p>
           <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.4em;">
-            Support</p>
+            <a class="menu-donate-button-en donate-button-with-heart" title="DONATE">DONATE</a>
+          </p>
         </div>
         <?php } else { ?>
         <div class="equ_medical_info">
@@ -362,6 +362,7 @@ function mediaclEq()
           <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
             <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> PLN</p>
         </div>
+        <a class="menu-donate-button-en" title="DONATE">DONATE</a>
         <?php } ?>
       </a>
       <div class="equ_medical_button">
@@ -579,7 +580,9 @@ function currentProject()
             <?php } ?>
           </div>
           <p class="aim font-blue raleway center-text customPlease">Please:</p>
-          <p class="aim font-blue raleway center-text size-two-new font-bold customSupport">Support</p>
+          <p class="aim font-blue raleway center-text size-two-new font-bold customSupport">
+            <a class="menu-donate-button-en donate-button-with-heart" title="DONATE">DONATE</a>
+          </p>
         </div>
         <?php } else { ?>
         <div class="equ_medical_info">
@@ -867,9 +870,14 @@ function payDonateGrid($atts = [], $content = null, $tag = '')
   $numberId = 0;
   while ($loop->have_posts()) : $loop->the_post();
     $numberId++;
+    if (get_post_meta(get_the_ID(), 'field_id', true)) {
+      $additionalClass = '';
+    } else {
+      $additionalClass = 'donateItemWithHeart';
+    }
   ?>
-<div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid">
-  <div class="payDonateItem">
+<div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid" id="donateNumber-<?php echo get_the_ID(); ?>">
+  <div class="payDonateItem <?php echo $additionalClass; ?>">
     <div class="equ_medical_title">
       <h2 class="font-blue raleway center-text">
         <a class="font-bold" href="<?php the_permalink(); ?>">
@@ -900,7 +908,8 @@ function payDonateGrid($atts = [], $content = null, $tag = '')
       </div>
       <p class="aim font-blue raleway center-text customPlease" style="font-size: 1.1em;">Please:</p>
       <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.3em;">
-        Support</p>
+        <a class="menu-donate-button-en donate-button-with-heart" title="DONATE">DONATE</a>
+      </p>
     </div>
     <?php } else { ?>
     <div class="equ_medical_info">
@@ -921,6 +930,7 @@ function payDonateGrid($atts = [], $content = null, $tag = '')
       <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
         <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> PLN</p>
     </div>
+    <a class="menu-donate-button-en" title="DONATE">DONATE</a>
     <?php } ?>
   </div>
 </div>
@@ -963,9 +973,14 @@ function payDonateGridPl($atts = [], $content = null, $tag = '')
   $numberId = 0;
   while ($loop->have_posts()) : $loop->the_post();
     $numberId++;
+    if (get_post_meta(get_the_ID(), 'field_id', true)) {
+      $additionalClass = 'donateItemWithHeart';
+    } else {
+      $additionalClass = 'donateItemWithHeart';
+    }
   ?>
 <div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid">
-  <div class="payDonateItem">
+  <div class="payDonateItem <?php echo $additionalClass; ?>">
     <div class="equ_medical_title">
       <h2 class="font-blue raleway center-text">
         <a class="font-bold" href="<?php the_permalink(); ?>">
@@ -994,10 +1009,11 @@ function payDonateGridPl($atts = [], $content = null, $tag = '')
         </div>
         <?php } ?>
       </div>
-      <p class="aim font-blue raleway center-text customPlease" style="font-size: 1.1em;">WPŁAĆ</p>
+      <p class="aim font-blue raleway center-text customPlease" style="font-size: 1.1em;"></p>
       <p class="aim font-blue raleway center-text size-two-new font-bold customSupport" style="font-size: 1.3em;">
-        I POMÓŻ TERAZ!</p>
+        POMÓŻ TERAZ!</p>
     </div>
+    <a class="menu-donate-button donate-button-with-heart" title="WPŁAĆ">WPŁAĆ</a>
     <?php } else { ?>
     <div class="equ_medical_info">
       <div style="display: none;"><?php echo get_the_content(); ?></div>
@@ -1017,6 +1033,7 @@ function payDonateGridPl($atts = [], $content = null, $tag = '')
       <p class="aim font-blue raleway center-text font-bold aim-price" style="font-size: 1.6em;">
         <?php echo get_post_meta(get_the_ID(), 'priceMedicalEquipment', TRUE); ?> zł</p>
     </div>
+    <a class="menu-donate-button donate-button-with-heart" title="WPŁAĆ">WPŁAĆ</a>
     <?php } ?>
   </div>
 </div>
@@ -1135,9 +1152,9 @@ function testShordcode()
   <p style="margin-bottom:35px;" class="raleway center-text font-blue">Our account number</p>
   <h4 style="margin-bottom:0;" class="raleway font-blue center-text font-bold text-upper"><span
       style="font-weight: 300 !important;">PLN: </span>pl 66 1030 1508 0000 0005 0039 8019</h4>
-  <!-- <p class="center-text font-blue raleway">US$ accounts:</p> -->
+  <!-- <p class="center-text font-blue raleway">US$ accounts:</p> 
   <h4 style="margin-bottom:0;" class="raleway font-blue center-text font-bold text-upper"><span
-      style="font-weight: 300 !important;">USD: </span>pl 22 1030 1508 0000 0005 0039 8035</h4>
+      style="font-weight: 300 !important;">USD: </span>pl 22 1030 1508 0000 0005 0039 8035</h4> -->
   <p style="margin-top:15px;" class="raleway center-text font-blue">SWIFT-Code (BIC): CITIPLPX</p>
   <h3 id="tradition_transfer_title" class="raleway center-text font-blue" style="text-transform: initial !important;">
   </h3>

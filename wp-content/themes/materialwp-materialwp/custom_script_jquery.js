@@ -1,4 +1,6 @@
 jQuery(document).ready(function($) {
+  var mainURL = 'https://test.fundacjaprzyjaciol.org';
+  var lang = window.location.href.indexOf('/en/') !== -1 ? 'en' : 'pl';
   $('.general-button-donate.pay-donate-hide a').removeAttr('href');
   $('#menu-lang-menu').on('click', function() {
     $('.dropdown-lang .sub-menu').slideToggle();
@@ -10,10 +12,10 @@ jQuery(document).ready(function($) {
   $('.single-icon-top-bar.bip-top').click(function() {
     $(this).removeAttr('href');
     if (jQuery.browser.mobile) {
-      console.log('mobile detected');
+      // console.log('mobile detected');
       $('html, body').animate({ scrollTop: $('#bip-cloud').offset().top - 150 }, 900);
     } else {
-      console.log('not mobile device detected');
+      // console.log('not mobile device detected');
       $('html, body').animate({ scrollTop: $('#bip-cloud').offset().top - 150 }, 900);
     }
     $('#bip-cloud').stop().css('visibility', 'visible').animate({ 'opacity': 1 });
@@ -22,12 +24,12 @@ jQuery(document).ready(function($) {
     }, 5000);
   });
   $('#text-faq').click(function() {
-    console.log('click-faq');
+    // console.log('click-faq');
     setTimeout(
       $('html, body').animate({ scrollTop: $('#faq').offset().top - 100 }, 'slow'), 3000);
   });
   $('#text-impact').click(function() {
-    console.log('click-impact');
+    // console.log('click-impact');
     setTimeout(
       $('html, body').animate({ scrollTop: $('#impact').offset().top - 100 }, 'slow'), 3000);
   });
@@ -62,9 +64,17 @@ jQuery(document).ready(function($) {
     $('#pay-donate-row-custom-grid').css('display', 'block');
     $('html, body').animate({ scrollTop: $('#donate_button_hook').offset().top - 130 }, 1000);
   });
-  $('.payDonateGrid').click(function() {
+  $('#donate-row .payDonateGrid').click(function() {
     $('.tax-dedu-con').show();
     $('html, body').animate({ scrollTop: $('#tescik').offset().top }, 1000);
+  });
+  $('#medicial-row-eq .payDonateGrid').click(function() {
+    window.localStorage.setItem('donateNumber', $(this).attr('id'));
+    if (lang === 'en') {
+      window.location.href = mainURL + '/en/become-a-friend/';
+    } else {
+      window.location.href = mainURL + '/pl/zostan-przyjacielem/';
+    }
   });
   $('#id_traditional_transfer').click(function() {
     $('.pay-button').removeClass('activeButton');
@@ -109,16 +119,16 @@ jQuery(document).ready(function($) {
     }
   });
 
-  $('#menu-item-1202 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/en/who-we-are/').addClass('disabled');
-  $('#menu-item-1003 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/en/how-we-help/').addClass('disabled');
-  $('#menu-item-557 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/en/become-a-friend/').addClass('disabled');
-  $('#menu-item-559 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/en/our-friends/').addClass('disabled');
-  $('#menu-item-558 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/en/contact-us/').addClass('disabled');
-  $('#menu-item-1898 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/pl/kim-jestesmy/').addClass('disabled');
-  $('#menu-item-1899 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/pl/jak-pomagamy/').addClass('disabled');
-  $('#menu-item-1900 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/pl/zostan-przyjacielem/').addClass('disabled');
-  $('#menu-item-1901 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/pl/nasi-przyjaciele/').addClass('disabled');
-  $('#menu-item-1902 a:eq(0)').attr('href', 'https://fundacjaprzyjaciol.org/pl/kontakt/').addClass('disabled');
+  $('#menu-item-1202 a:eq(0)').attr('href', mainURL + '/en/who-we-are/').addClass('disabled');
+  $('#menu-item-1003 a:eq(0)').attr('href', mainURL + '/en/how-we-help/').addClass('disabled');
+  $('#menu-item-557 a:eq(0)').attr('href', mainURL + '/en/become-a-friend/').addClass('disabled');
+  $('#menu-item-559 a:eq(0)').attr('href', mainURL + '/en/our-friends/').addClass('disabled');
+  $('#menu-item-558 a:eq(0)').attr('href', mainURL + '/en/contact-us/').addClass('disabled');
+  $('#menu-item-1898 a:eq(0)').attr('href', mainURL + '/pl/kim-jestesmy/').addClass('disabled');
+  $('#menu-item-1899 a:eq(0)').attr('href', mainURL + '/pl/jak-pomagamy/').addClass('disabled');
+  $('#menu-item-1900 a:eq(0)').attr('href', mainURL + '/pl/zostan-przyjacielem/').addClass('disabled');
+  $('#menu-item-1901 a:eq(0)').attr('href', mainURL + '/pl/nasi-przyjaciele/').addClass('disabled');
+  $('#menu-item-1902 a:eq(0)').attr('href', mainURL + '/pl/kontakt/').addClass('disabled');
   $('#menu-item-1202').addClass('uderline-menu shop-link');
   $('#menu-item-556').addClass('uderline-menu shop-link');
   $('#menu-item-667').addClass('uderline-menu shop-link');
@@ -164,29 +174,29 @@ jQuery(document).ready(function($) {
   $('.foot-bip').removeAttr("href");
   if (jQuery.browser.mobile) {
     $('#footerBipIcon').toggle(function() {
-      console.log('start mobile bip');
+      // console.log('start mobile bip');
       $('#bip-cloud').stop().css('visibility', 'visible').animate({ "opacity": 1 });
       $('html, body').animate({ scrollTop: $('#bip-cloud').offset().top - 150 }, 900);
     }, function() {
       $('#bip-cloud').stop().css('visibility', 'hidden').animate({ "opacity": 0 });
-      console.log('end bip');
+      // console.log('end bip');
     });
     $(document).click(function() {
       $('#bip-cloud').stop().css('visibility', 'hidden').animate({ "opacity": 0 });
     });
   } else {
     $('#footerBipIcon').hover(function() {
-      console.log('start desktop bip');
+      // console.log('start desktop bip');
       $('#bip-cloud').stop().css('visibility', 'visible').animate({ "opacity": 1 });
     }, function() {
       $('#bip-cloud').stop().css('visibility', 'hidden').animate({ "opacity": 0 });
-      console.log('end bip');
+      // console.log('end bip');
     });
   }
   $('.button-download--img').hover(function() {
-    $(this).find('img').attr('src', "https://fundacjaprzyjaciol.org/wp-content/uploads/2017/12/1proc-2.svg");
+    $(this).find('img').attr('src', mainURL + "/wp-content/uploads/2017/12/1proc-2.svg");
   }, function() {
-    $(this).find('img').attr('src', "https://fundacjaprzyjaciol.org/wp-content/uploads/2017/12/1proc-1.svg");
+    $(this).find('img').attr('src', mainURL + "/wp-content/uploads/2017/12/1proc-1.svg");
   });
   $("#lupka").click(function() {
     $(".container-search").fadeIn(200);
@@ -213,44 +223,59 @@ jQuery(document).ready(function($) {
   $("#fld_3478316_1").click(function() {
     $('.news-custom').hide();
   });
+
+  if (localStorage.getItem('donateNumber') !== null) {
+    var donateNumber = localStorage.getItem('donateNumber');
+    $('.img-pay-hide').css('display', 'block');
+    $('#pay-donate-row-custom-grid').css('display', 'block');
+    $('#testowy-row').css('display', 'block');
+    $('#testowy-row h2').text('');
+    $('#' + donateNumber).find('.equ_medical_title h2').clone().appendTo('#testowy-row h3');
+    var test = $('#' + donateNumber).find('.payGridImage').attr('test-background');
+    var accountNumber = $('#' + donateNumber).find('#account-number').html();
+    // console.log(typeof(accountNumber));
+    if (typeof(accountNumber) != 'undefined') {
+      // console.log('donateAccountNumber append');
+      $('#donateAccountNumber').html(accountNumber);
+    } else {
+      // console.log('donateAccountNumber remove');
+      $('#donateAccountNumber').html('');
+    }
+    $('.pay-img img').attr('src', test);
+    $('#testowy-row h2').css('font-size', '22px');
+    // $('#testowy-row h2').addClass("amatic");
+    var textTest = $('#' + donateNumber).find('.equ_medical_title h2').text().replace(/\r?\n|\r/g, '').trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    // console.log(textTest);
+    $("#p24_description").val("Wsparcie/ " + textTest);
+    $(".pp_item_name_custom").val("Wsparcie/ " + textTest);
+    $("#tradition_transfer_title").text("Title: " + textTest);
+    if (window.location.href.indexOf("/pl/") > -1) {
+      $("#tradition_transfer_title").text("Tytuł: " + textTest);
+    }
+    $(".pay-img").attr("style", "background-image:url(" + test + ");");
+    $('html, body').animate({ scrollTop: $('#testowy-row').offset().top }, 1000);
+    window.localStorage.removeItem('donateNumber');
+    delete donateNumber;
+  }
+
   var url = window.location.href;
-  if (url == 'https://fundacjaprzyjaciol.org/en/become-a-friend/#donate_button_hook') {
-    $('.img-pay-hide').css('display', 'block');
-
-    $('#pay-donate-row-custom-grid').css('display', 'block');
-  }
-  if (url == 'https://fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#donate_button_hook') {
+  if (url.indexOf('/become-a-friend/#donate_button_hook') !== -1 || url.indexOf('/zostan-przyjacielem/#donate_button_hook') !== -1) {
     $('.img-pay-hide').css('display', 'block');
     $('#pay-donate-row-custom-grid').css('display', 'block');
-  }
-
-  if (url == 'https://fundacjaprzyjaciol.org/en/become-a-friend/') {
+  } else if ((url.indexOf('/become-a-friend/') !== -1 || url.indexOf('/zostan-przyjacielem/') !== -1) && url.indexOf('#') === -1) {
     $('.menu-donate').click(function() {
-
-      window.location = 'https://fundacjaprzyjaciol.org/en/become-a-friend/#donate_button_hook';
+      window.location = url + '#donate_button_hook';
       $('.img-pay-hide').css('display', 'block');
       $('#pay-donate-row-custom-grid').css('display', 'block');
     });
+
     $('.mobi-donate').click(function() {
-      window.location = 'https://fundacjaprzyjaciol.org/en/become-a-friend/#donate_button_hook';
+      window.location = url + '#donate_button_hook';
       $('.img-pay-hide').css('display', 'block');
       $('#pay-donate-row-custom-grid').css('display', 'block');
     });
   }
-  if (url == 'https://fundacjaprzyjaciol.org/pl/zostan-przyjacielem/') {
-    console.log('button')
-    $('.menu-donate-pl').click(function() {
 
-      window.location = 'https://fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#donate_button_hook';
-      $('.img-pay-hide').css('display', 'block');
-      $('#pay-donate-row-custom-grid').css('display', 'block');
-    });
-    $('.mobi-donate').click(function() {
-      window.location = 'https://fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#donate_button_hook';
-      $('.img-pay-hide').css('display', 'block');
-      $('#pay-donate-row-custom-grid').css('display', 'block');
-    });
-  }
   if ($('.donate_ile_dzieci').is(':empty')) {
     $('.donate_dzieci,#how-will-it,#a-year,.kids-life').hide();
   }
@@ -277,7 +302,7 @@ jQuery(document).ready(function($) {
   $('.donate-item').click(function() {
     var thisItem = $(this);
     var priceVal = $(this).attr('value');
-    console.log(priceVal)
+    // console.log(priceVal)
 
     $('#demo').attr('value', priceVal);
   });
@@ -288,8 +313,8 @@ jQuery(document).ready(function($) {
     margin: 30,
     nav: true,
     navText: [
-      "<img class='owl-custom-nav' src='https://fundacjaprzyjaciol.org/wp-content/uploads/2017/11/back.png'/>",
-      "<img class='owl-custom-nav' src='https://fundacjaprzyjaciol.org/wp-content/uploads/2017/11/next.png'/>"
+      "<img class='owl-custom-nav' src='" + mainURL + "/wp-content/uploads/2017/11/back.png'/>",
+      "<img class='owl-custom-nav' src='" + mainURL + "/wp-content/uploads/2017/11/next.png'/>"
     ],
     responsive: {
       0: {
@@ -307,36 +332,36 @@ jQuery(document).ready(function($) {
   if (window.location.href.indexOf("/en") > -1) {
     // console.log('EN !!!');
     $(".search-field").attr("placeholder", "Search...");
-    $("#cn-notice-text").html('<span>By continuing to browse our site you agree to our use of <strong><a href="https://fundacjaprzyjaciol.org/en/cookies-policy/">cookies </a></strong> and <strong><a href="https://fundacjaprzyjaciol.org/en/privacy-cookies-policy/">Privacy Policy</a></strong>.</span><span class="close"></span>');
-    $("#logo img").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/fp_logo_en.svg");
-    $(".mob-menu-logo-holder a").attr("href", "http://www.fundacjaprzyjaciol.org/en/");
-    $("a#krs_foot_link").attr("href", "http://www.fundacjaprzyjaciol.org/en/become-a-friend/#tax_one_percent");
-    $("#krs_location").attr("href", "http://www.fundacjaprzyjaciol.org/en/become-a-friend/#tax_one_percent");
+    $("#cn-notice-text").html('<span>By continuing to browse our site you agree to our use of <strong><a href="' + mainURL + '/en/cookies-policy/">cookies </a></strong> and <strong><a href="' + mainURL + '/en/privacy-cookies-policy/">Privacy Policy</a></strong>.</span><span class="close"></span>');
+    $("#logo img").attr("src", mainURL + "/wp-content/uploads/2017/12/fp_logo_en.svg");
+    $(".mob-menu-logo-holder a").attr("href", mainURL + '/en/');
+    $("a#krs_foot_link").attr("href", mainURL + "/en/become-a-friend/#tax_one_percent");
+    $("#krs_location").attr("href", mainURL + "/en/become-a-friend/#tax_one_percent");
     $("#id_one_time_giving").text("ONE TIME GIVING");
     $("#monthly_giving_custom").text("MONTHLY GIVING");
     $("#id_traditional_transfer").text("TRADITIONAL TRANSFER");
     // $(".information-under p").html("<p style='font-size: 1em;'>Let's stay in touch! Keep up-to date with the latest news and campaigns of the <i>Friends of Children's Hospitals in Warsaw</i> straight to your inbox.</p>");
     if ($(window).width() < 1024) {
-      $(".mob-standard-logo").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/fp_logo_mobile_en.svg");
+      $(".mob-standard-logo").attr("src", mainURL + "/wp-content/uploads/2017/12/fp_logo_mobile_en.svg");
     }
     $("span.donate_text_dzieci").text("children");
     $(".more_info_przelewy span").text("[Show more...]");
     $(".more_info_paypal span").text("[Show more...]");
-    $("#bip-cloud p").html('<p><a href="www.fundacjaprzyjaciol.org">www.fundacjaprzyjaciol.org</a> is also a site of Biuletyn Informacji Publicznej (Bulletin of Public Information), according to the obligation requested by Article 6, point 6 of the Polish Law on Access to Public Information from September 6, 2001. Information included in the financial reports and reports on our activities (folder: Who we are / Documents) meet the requirements of the Regulation of the Minister of Internal Affairs and Administration regarding the Public Information Bulletin BIP from January 18, 2007.</p>');
+    $("#bip-cloud p").html('<p><a href="' + mainURL + '">fundacjaprzyjaciol.org</a> is also a site of Biuletyn Informacji Publicznej (Bulletin of Public Information), according to the obligation requested by Article 6, point 6 of the Polish Law on Access to Public Information from September 6, 2001. Information included in the financial reports and reports on our activities (folder: Who we are / Documents) meet the requirements of the Regulation of the Minister of Internal Affairs and Administration regarding the Public Information Bulletin BIP from January 18, 2007.</p>');
   }
   if (window.location.href.indexOf("/pl/") > -1) {
     // console.log('PL !!!');
-    $('.single-donate-thansk-row a.button-donate-post').attr("href", "http://www.fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#donate_button_hook");
+    $('.single-donate-thansk-row a.button-donate-post').attr("href", mainURL + "/pl/zostan-przyjacielem/#donate_button_hook");
     $(".search-field").attr("placeholder", "Wyszukaj...");
-    $("#cn-notice-text").html('<span>Korzystając ze strony, wyrażasz zgodę na używanie <strong><a href="http://www.fundacjaprzyjaciol.org/pl/cookies-policy-pl/">cookies</a></strong> i akceptujesz <strong><a href="http://www.fundacjaprzyjaciol.org/pl/polityka-prywatnosci/"> Politykę prywatności</a></strong>.</span><span class="close"></span>');
+    $("#cn-notice-text").html('<span>Korzystając ze strony, wyrażasz zgodę na używanie <strong><a href="' + mainURL + '/pl/cookies-policy-pl/">cookies</a></strong> i akceptujesz <strong><a href="' + mainURL + '/pl/polityka-prywatnosci/"> Politykę prywatności</a></strong>.</span><span class="close"></span>');
     $(".lvca-image-wrapper img").css("display", "none");
-    $("#logo img").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/fp_logo_pl.svg");
-    $(".mobi-donate").attr("href", "http://www.fundacjaprzyjaciol.org/pl/zostan-przyjacielem/");
-    $("a.baf-donate-button").css('{width: 398px; height: 112px; display: block; margin: 0 auto 30px auto; background: url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/duzy_button_becomaafriend-1.svg) no-repeat center center; background-repeat: no-repeat;}');
-    $("a.baf-donate-button:hover").css('background-image', 'url(http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/duzy_button_becomaafriend_rollover_PL.svg)');
+    $("#logo img").attr("src", mainURL + "/wp-content/uploads/2017/12/fp_logo_pl.svg");
+    $(".mobi-donate").attr("href", mainURL + "/pl/zostan-przyjacielem/");
+    $("a.baf-donate-button").css('{width: 398px; height: 112px; display: block; margin: 0 auto 30px auto; background: url(' + mainURL + '/wp-content/uploads/2017/12/duzy_button_becomaafriend-1.svg) no-repeat center center; background-repeat: no-repeat;}');
+    $("a.baf-donate-button:hover").css('background-image', 'url(' + mainURL + '/wp-content/uploads/2017/12/duzy_button_becomaafriend_rollover_PL.svg)');
     $(".slider-button-donate").css('background-image', 'url("/wp-content/uploads/2018/09/duzy_button_becomaafriend_PL-2a.svg")');
-    $(".mob-menu-logo-holder a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/");
-    $("#krs_location").attr("href", "http://www.fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#tax_one_percent");
+    $(".mob-menu-logo-holder a").attr("href", mainURL + "/pl/");
+    $("#krs_location").attr("href", mainURL + "/pl/zostan-przyjacielem/#tax_one_percent");
     $("#id_one_time_giving").text("WSPARCIE JEDNORAZOWE");
     $("#monthly_giving_custom").text("WSPARCIE CO MIESIĄC");
     $("#id_traditional_transfer").text("PRZELEW TRADYCYJNY");
@@ -346,16 +371,16 @@ jQuery(document).ready(function($) {
     $("#how-will-it").text("Jak wpłynie to na życie dzieci?");
     $("#a-year").text("każdego roku otrzyma potrzebną im pomoc");
     $("#thank-you-all").text("Dziękujemy za wsparcie!");
-    $(".image-post-donate-kids").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/2017-12-14.jpg");
-    $("#bip-cloud p").html('Fundacja „Przyjaciele Szpitali Dziecięcych w Warszawie” informuje, że strona www.fundacjaprzyjaciol.orgpełni rolę strony Biuletynu Informacji Publicznej, zgodnie z obowiązkiem wynikającym z art.8 ust. 6 ustawy z dnia 6 września 2001 r. o dostępie do informacji publicznej. Informacje zawarte w sprawozdaniach merytorycznym i finansowym (zakładka: Kim jesteśmy / Dokumenty) spełniają wymogi określone w rozporządzeniu Ministra Spraw Wewnętrznych i Administracji z dnia 18 stycznia 2007 r. w sprawie Biuletynu Informacji Publicznej.');
+    $(".image-post-donate-kids").attr("src", mainURL + "/wp-content/uploads/2017/12/2017-12-14.jpg");
+    $("#bip-cloud p").html('Fundacja „Przyjaciele Szpitali Dziecięcych w Warszawie” informuje, że strona fundacjaprzyjaciol.org pełni rolę strony Biuletynu Informacji Publicznej, zgodnie z obowiązkiem wynikającym z art.8 ust. 6 ustawy z dnia 6 września 2001 r. o dostępie do informacji publicznej. Informacje zawarte w sprawozdaniach merytorycznym i finansowym (zakładka: Kim jesteśmy / Dokumenty) spełniają wymogi określone w rozporządzeniu Ministra Spraw Wewnętrznych i Administracji z dnia 18 stycznia 2007 r. w sprawie Biuletynu Informacji Publicznej.');
     if ($(window).width() < 1024) {
-      $(".mob-standard-logo").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/fp_logo_mobile_pl.svg");
+      $(".mob-standard-logo").attr("src", mainURL + "/wp-content/uploads/2017/12/fp_logo_mobile_pl.svg");
     }
     $(".more_info_przelewy span").text("[pokaż więcej...]");
     $(".more_info_paypal span").text("[pokaż więcej...]");
     $("#become_a_friend_donate_button").css("background", "url(/wp-content/uploads/2018/06/2.svg)");
     $("#who_we_are_doate_button").css("background", "url(/wp-content/uploads/2018/06/2.svg)");
-    $(".button-donate-post").css("background", 'url("http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_header_LP_PL.svg")');
+    $(".button-donate-post").css("background", 'url("' + mainURL + '/wp-content/uploads/2017/12/FP_donate_header_LP_PL.svg")');
     $("#who_we_are_doate_button").css("background-repeat", "no-repeat");
     $("#become_a_friend_donate_button").css("background-repeat", "no-repeat");
     $(".button-donate-post").css("background-repeat", "no-repeat");
@@ -375,17 +400,17 @@ jQuery(document).ready(function($) {
     $("#mobmenuright .menu-item-1164 a").text("Zostań przyjacielem");
     $("#mobmenuright .menu-item-1169 a").text("Nasi przyjaciele");
     $("#mobmenuright .menu-item-1166 a").text("Kontakt");
-    $("#mobmenuright .menu-item-1167 a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/");
-    $("#mobmenuright .menu-item-1170 a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/kim-jestesmy/");
-    $("#mobmenuright .menu-item-1168 a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/jak-pomagamy/");
-    $("#mobmenuright .menu-item-1164 a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/zostan-przyjacielem/");
-    $("#mobmenuright .menu-item-1169 a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/nasi-przyjaciele/");
-    $("#mobmenuright .menu-item-1166 a").attr("href", "http://www.fundacjaprzyjaciol.org/pl/kontakt/");
+    $("#mobmenuright .menu-item-1167 a").attr("href", mainURL + "/pl/");
+    $("#mobmenuright .menu-item-1170 a").attr("href", mainURL + "/pl/kim-jestesmy/");
+    $("#mobmenuright .menu-item-1168 a").attr("href", mainURL + "/pl/jak-pomagamy/");
+    $("#mobmenuright .menu-item-1164 a").attr("href", mainURL + "/pl/zostan-przyjacielem/");
+    $("#mobmenuright .menu-item-1169 a").attr("href", mainURL + "/pl/nasi-przyjaciele/");
+    $("#mobmenuright .menu-item-1166 a").attr("href", mainURL + "/pl/kontakt/");
     $("#labelCustomBecome1").text(" *Wyrażam zgodę na przekazywanie przez fundację „Przyjaciele Szpitali Dziecięcych w Warszawie” moich danych osobowych zawartych w formularzu płatności do PayPro SA/DialCom24 Sp. z o. o. z siedzibą w Poznaniu (60-327) przy ul. Kanclerskiej 15, w celu realizacji płatności mojej darowizny.");
     $("#labelCustomBecomePay1").text(" *Wyrażam zgodę na przekazywanie przez fundację „Przyjaciele Szpitali Dziecięcych w Warszawie” moich danych osobowych zawartych w formularzu płatności do PayPal (Europe) S.à r.l. et Cie, S.C.A. (R.C.S. Luxembourg B 118 349) w celu realizacji płatności mojej darowizny.");
     // $("#labelCustomBecome").text(" Chcę otrzymywać korespondencję od fundacji „Przyjaciele Szpitali Dziecięcych w Warszawie” drogą elektroniczną, aby wiedzieć, jak pomagamy razem małym pacjentom. W tym celu wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu płatności przez fundację „Przyjaciele Szpitali Dziecięcych w Warszawie” („Fundacja”)…");
     // $("#labelCustomBecomePay").text(" Chcę otrzymywać korespondencję od fundacji „Przyjaciele Szpitali Dziecięcych w Warszawie” drogą elektroniczną, aby wiedzieć, jak pomagamy razem małym pacjentom. W tym celu wyrażam zgodę na przetwarzanie moich danych osobowych zawartych w formularzu płatności przez fundację „Przyjaciele Szpitali Dziecięcych w Warszawie” („Fundacja”)…");
-    $("#agreeDetails").text(" Szczegółowe informacje odnośnie przetwarzania danych przez fundację „Przyjaciele Szpitali Dziecięcych można znaleźć tutaj: https://fundacjaprzyjaciol.org/pl/polityka-prywatnosci/");
+    $("#agreeDetails").text(" Szczegółowe informacje odnośnie przetwarzania danych przez fundację „Przyjaciele Szpitali Dziecięcych można znaleźć tutaj: " + mainURL + "/pl/polityka-prywatnosci/");
     $(".przelewy_more_hide_information p").text("… zgodnie z art.6 ust.1 lit. a ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016). Wiem, że fundacja z siedzibą w Warszawie (00-132) przy ul. Grzybowskiej 5a, będzie Administratorem danych osobowych oraz że:");
     $(".paypal_more_hide_information p").text("… zgodnie z art.6 ust.1 lit. a ogólnego rozporządzenia o ochronie danych osobowych z dnia 27 kwietnia 2016 r. (Dz. Urz. UE L 119 z 04.05.2016). Wiem, że fundacja z siedzibą w Warszawie (00-132) przy ul. Grzybowskiej 5a, będzie Administratorem danych osobowych oraz że:");
     $("ul li.list_custom_1").text("Podanie danych jest dobrowolne, jednak niezbędne w celu otrzymywania wiadomości od Fundacji;");
@@ -402,8 +427,8 @@ jQuery(document).ready(function($) {
     $("#paypal-button-submit").val("PRZEKAŻ TERAZ");
     $("#pp_client_custom").attr("placeholder", "Imię i Nazwisko");
     $("#p24_client_custom").attr("placeholder", "Imię i Nazwisko");
-    $("a.mobi-donate").attr("href", "http://www.fundacjaprzyjaciol.org/pl/zostan-przyjacielem/#donate_button_hook");
-    $(".mobi-donate img").attr("src", "http://www.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/FP_donate_menu_PL.svg");
+    $("a.mobi-donate").attr("href", mainURL + "/pl/zostan-przyjacielem/#donate_button_hook");
+    $(".mobi-donate img").attr("src", mainURL + "/wp-content/uploads/2017/12/FP_donate_menu_PL.svg");
   }
 
   $('#pay-donate-row-custom-grid').find('.payDonateItem').click(function(e) {
@@ -411,24 +436,36 @@ jQuery(document).ready(function($) {
     $('#testowy-row h2').text('');
     $(this).find('.equ_medical_title h2').clone().appendTo('#testowy-row h3');
     var test = $(this).find('.payGridImage').attr('test-background');
-    var accountNumber = $(this).find('#account-number').text();
-    // console.log(accountNumber.length);
-    if (accountNumber.length > 0) {
-      $('#testowy-row .donate-header-title').append('<p id="donateAccountNumber" style="text-align: center;position: absolute;width: 100%;">' + accountNumber + '</p>');
+    var accountNumber = $(this).find('#account-number').html();
+    // console.log(typeof(accountNumber));
+    if (typeof(accountNumber) != 'undefined') {
+      // console.log('donateAccountNumber append');
+      $('#donateAccountNumber').html(accountNumber);
     } else {
-      $('#donateAccountNumber').remove();
+      // console.log('donateAccountNumber remove');
+      $('#donateAccountNumber').html('');
     }
     $('.pay-img img').attr('src', test);
     $('#testowy-row h2').css('font-size', '22px');
     // $('#testowy-row h2').addClass("amatic");
     var textTest = $(this).find('.equ_medical_title h2').text().replace(/\r?\n|\r/g, '').trim().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-    console.log(textTest);
+    // console.log(textTest);
     $("#p24_description").val("Wsparcie/ " + textTest);
-    $("#item_name_custom").val("Wsparcie/ " + textTest);
+    $(".pp_item_name_custom").val("Wsparcie/ " + textTest);
     $("#tradition_transfer_title").text("Title: " + textTest);
     if (window.location.href.indexOf("/pl/") > -1) {
       $("#tradition_transfer_title").text("Tytuł: " + textTest);
     }
     $(".pay-img").attr("style", "background-image:url(" + test + ");");
   });
+
+  var firstButtonEn = $('.home-red-text-bkg').find('.menu-donate-button-en');
+  if (typeof(firstButtonEn) == 'object') {
+    $('.home-red-text-bkg').click(function(e) {
+      window.location.href = firstButtonEn.attr('href');
+    });
+    $('.slider-first-text-wrapper-bkg').click(function(e) {
+      window.location.href = firstButtonEn.attr('href');
+    });
+  }
 });
