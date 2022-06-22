@@ -979,7 +979,7 @@ function payDonateGridPl($atts = [], $content = null, $tag = '')
       $additionalClass = 'donateItemWithHeart';
     }
   ?>
-<div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid">
+<div class="col-xs-12 col-sm-6 col-md-4 realizacja-col payDonateGrid" id="donateNumber-<?php echo get_the_ID(); ?>">
   <div class="payDonateItem <?php echo $additionalClass; ?>">
     <div class="equ_medical_title">
       <h2 class="font-blue raleway center-text">

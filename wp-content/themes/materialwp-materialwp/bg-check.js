@@ -8,20 +8,20 @@ jQuery(document).ready(function($) {
     // });
     //Zapis tła mobile i desktop
     var desktop_bg = $('#slider-page').css('background-image').replace(/"/g, "") + ' !important';
-    console.log('Desktop bg: ' + desktop_bg);
+    // console.log('Desktop bg: ' + desktop_bg);
     var mobile_bg = $('#background-link > div').css('background-image').replace(/"/g, "") + ' !important';
     if (mobile_bg == 'none !important') {
       mobile_bg = desktop_bg;
-      console.log('Mobile bg = Desktop bg: ' + mobile_bg);
+      // console.log('Mobile bg = Desktop bg: ' + mobile_bg);
     } else {
-      console.log('Mobile bg: ' + mobile_bg);
+      // console.log('Mobile bg: ' + mobile_bg);
     }
 
 
     //funkcje zmiany tła
     var desktop_check = function() {
       $("#slider-page").css('cssText', 'background-image:' + desktop_bg + '; background-size: cover !important');
-      console.log('Aktualne tło: desktop');
+      // console.log('Aktualne tło: desktop');
     };
     /*var mobile_check = function() {
       $("#slider-page").css('cssText', 'background-image:' + mobile_bg + '; background-size: contain !important');

@@ -1,5 +1,5 @@
 jQuery(document).ready(function($) {
-  var mainURL = 'https://test.fundacjaprzyjaciol.org';
+  var mainURL = 'https://fundacjaprzyjaciol.org';
   var lang = window.location.href.indexOf('/en/') !== -1 ? 'en' : 'pl';
   $('.general-button-donate.pay-donate-hide a').removeAttr('href');
   $('#menu-lang-menu').on('click', function() {
@@ -65,8 +65,11 @@ jQuery(document).ready(function($) {
     $('html, body').animate({ scrollTop: $('#donate_button_hook').offset().top - 130 }, 1000);
   });
   $('#donate-row .payDonateGrid').click(function() {
-    $('.tax-dedu-con').show();
-    $('html, body').animate({ scrollTop: $('#tescik').offset().top }, 1000);
+    var tescik = $('#tescik');
+    if (typeof(tescik) != 'undefined') {
+      $('.tax-dedu-con').show();
+      $('html, body').animate({ scrollTop: $('#tescik').offset().top }, 1000);
+    }
   });
   $('#medicial-row-eq .payDonateGrid').click(function() {
     window.localStorage.setItem('donateNumber', $(this).attr('id'));
@@ -466,6 +469,16 @@ jQuery(document).ready(function($) {
     });
     $('.slider-first-text-wrapper-bkg').click(function(e) {
       window.location.href = firstButtonEn.attr('href');
+    });
+  }
+
+  var firstButtonPl = $('.home-red-text-bkg').find('.menu-donate-button');
+  if (typeof(firstButtonPl) == 'object') {
+    $('.home-red-text-bkg').click(function(e) {
+      window.location.href = firstButtonPl.attr('href');
+    });
+    $('.slider-first-text-wrapper-bkg').click(function(e) {
+      window.location.href = firstButtonPl.attr('href');
     });
   }
 });
