@@ -14,13 +14,6 @@
 
 get_header(); ?>
 
-<div class="fixed">
-  <a href="/en/become-a-friend/#tax_one_percent">
-    <img src=https://test.fundacjaprzyjaciol.org/wp-content/uploads/2017/12/1proc_menu.svg
-      alt="Jeden procent podatku" />
-  </a>
-</div>
-
 <div class="container">
   <div class="row">
 
